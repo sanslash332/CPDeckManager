@@ -1,352 +1,476 @@
-Copy the card that you wish to include in the deck in txt format, then replace the first number by the one that you wish.
+Copy the card or cards you wish to include in your TXT deck, replacing the first number by the one you wish.
  
-normalisation 4 normalization, "normal " type, only follows the "normal " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-petiteTappe 4 little tapp, "normal " type, 3 power level physical, 100 % succeeding, 
-etincelleMagique 4 magical shine, "normal " type, 3 power level special, 100 % succeeding, 
-camouflage 4 hideout, "normal " type, 100 % succeeding, launcher gets 100 % chance of taking +1 in dodge, and this during about 4 turns, 
-bougeotte 4 wanderlust, "normal " type, 100 % succeeding, launcher gets 100 % chance of taking -1 in paralysis, and this during about 4 turns, 
-baillement 4 yawn, "normal " type 1, 75 % succeeding, in about 1 turns target gets 100 % chance of taking +1 in sleep, and this during about 2 turns, 
-monteeEnPuissance 4 increase in power, "normal " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in special move, and this during about 8 turns, 
-postureNeutre 4 neutral talent, "normal " type 1, 100 % succeeding, The launcher takes the "neustral" talent (), 
-reflet 4 double team, "normal " type 2, 90 % succeeding, launcher gets 100 % chance of taking +1 in dodge, and this during about 8 turns, 
-griffe 4 scratch, "normal " type 2, 4 power level physical, 100 % succeeding, 
-grosseTappe 4 slap, "normal " type 3, 5 power level physical, 100 % succeeding, target gets 10 % chance of taking +1 in fear, and this during about 1 turns, 
-supplement 4 supplement, "normal " type 3, 100 % succeeding, launcher gets 100 % chance to take 1 card from his deck, 
-normalisationMutuelle 4 mutual normalization, "normal " type 4, 100 % succeeding, 100 % chance of changing the type of the launcher into "normal ", 100 % chance of changing the type of the target into "normal ", 
-rayonMagique 4 magical ray, "normal " type 4, 5 power level special, 100 % succeeding, 
-herbivore 4 herbivorous, "normal " type 5, 100 % succeeding, The launcher takes the "herbivorous" talent (-3 of power on "grass " received moves, +3 of power on "fang" received moves), 
-plaquage 4 body slam, "normal " type 6, 10 power level physical, 100 % succeeding, target gets 10 % chance of taking +1 in paralysis, and this during about 1 turns, 
-belier 4 take down, "normal " type 8, 15 power level physical, launcher takes 30 % damage, 70 % succeeding, target gets 10 % chance of taking +1 in fear, and this during about 1 turns, 
-flotDEnergie 4 little flood of energy, "normal " type 8, 10 power level special, 100 % succeeding, 
-comboGriffe 4 fury swipes, "normal " type 10, 4 power level physical, can hit 5 times, 100 % succeeding, 
-deferlenteEnergetique 4 big flood of energy, "normal " type 15, 15 power level special, 100 % succeeding, 
-neutralisationGenerale 4 general neutralization, "normal " type 18, 100 % succeeding, The launcher takes the "neustral" talent (), The target takes the "neustral" talent (), Set the "neustral" environment (), 
-gigaImpact 4 giga impact, "normal " type 20, 30 power level physical, launcher takes 50 % damage, 90 % succeeding, target gets 50 % chance of taking +2 in fear, and this during about 1 turns, 
-salutation 4 salutation, "fighting" type, only follows the "fighting" type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-gonflette 4 bulk up, "fighting" type, 100 % succeeding, launcher gets 100 % chance of taking +1 in physical move, and this during about 4 turns, 
-elixirDePerspicacite 4 elixir of perspicacity, "fighting" type, has critical failure to level 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in critical hit, and this during about 4 turns, 
-petitPunch 4 little punch, "fighting" type, 3 power level physical, 100 % succeeding, 
-determination 4 determination, "fighting" type 1, 100 % succeeding, launcher gets 100 % chance to take 1 card "physical" from his deck, 
-petitKick 4 little kick, "fighting" type 1, 4 power level physical, 100 % succeeding, 
-enGarde 4 attention, "fighting" type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in physical defense, and this during about 8 turns, 
-grosPunch 4 big punch, "fighting" type 2, 6 power level physical, 100 % succeeding, 
-epeiste 4 sword fighter, "fighting" type 2, 100 % succeeding, The launcher takes the "sword fighter" talent (+10 of power on "sword" launched moves, -5 of power on "sword" received moves), 
-grosKick 4 big kick, "fighting" type 3, 7 power level physical, 100 % succeeding, 
-renforcement 4 trussing, "fighting" type 3, 100 % succeeding, launcher gets 100 % chance of taking +2 in physical move, and this during about 4 turns, 
-fortePaume 4 force palm, "fighting" type 5, 5 power level physical, 100 % succeeding, target gets 50 % chance of taking +1 in paralysis, and this during about 1 turns, 
-clocheDeCombat 4 ring of fight, "fighting" type 7, 100 % succeeding, launcher gets 100 % chance of taking +3 in physical move, and this during about 2 turns, launcher gets 100 % chance of taking -1 in fear, and this during about 4 turns, 
-uppercut 4 dizzy punch, "fighting" type 8, 8 power level physical, 100 % succeeding, target gets 20 % chance of taking +1 in confusion, and this during about 1 turns, 
-clefDeBras 4 armlock, "fighting" type 10, 5 power level physical, 100 % succeeding, target gets 30 % chance of taking +1 in paralysis, and this during about 1 turns, target gets 100 % chance to move 1 card "hand" into his exile, 
-clefDeJambe 4 legglock, "fighting" type 11, 6 power level physical, 100 % succeeding, target gets 30 % chance of taking +1 in paralysis, and this during about 1 turns, target gets 100 % chance to move 1 card "foot" into his exile, 
-mitrapoing 4 focus punch, "fighting" type 15, 15 power level physical, 100 % succeeding, launcher gets 100 % chance of taking -2 in physical defense, and this during about 1 turns, 
-mitrakick 4 focus kick, "fighting" type 18, 20 power level physical, 100 % succeeding, launcher gets 100 % chance of taking -2 in physical defense, and this during about 1 turns, 
-exploforce 4 focus blast, "fighting" type 20, 20 power level special, 90 % succeeding, target gets 20 % chance of taking -1 in special defense, and this during about 8 turns, 
-airLouche 4 shady mind, "dark " type, only follows the "dark " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-rugissement 4 growl, "dark " type, 100 % succeeding, target gets 100 % chance of taking -2 in physical move, and this during about 2 turns, target gets 10 % chance of taking +1 in fear, and this during about 1 turns, 
-morsure 4 bite, "dark " type, 3 power level physical, 100 % succeeding, 
-goutDuRisque 4 taste of risk, "dark " type, 100 % succeeding, launcher gets 100 % chance of taking +1 in critical hit, +1 in critical failure, and this during about 4 turns, 
-feinte 4 feint attack, "dark " type 1, 4 power level physical, has critical hit to level 1, never fails, 
-intimidation 4 intimidate, "dark " type 1, 100 % succeeding, target gets 100 % chance of taking -1 in physical move, and this during about 8 turns, 
-crachat 4 spit, "dark " type 1, 100 % succeeding, target gets 100 % chance of taking +2 in physical move, -2 in physical defense, and this during about 2 turns, 
-coupBas 4 sucker punch, "dark " type 1, 4 power level physical, has critical hit to level 3, 100 % succeeding, 
-breuvageForce 4 forced beverage, "dark " type 1, follows the number of cards "elixirDePoison" in the launcher's hand, 100 % succeeding, in about 2 turns target gets 100 % chance of taking +2 in poison, and this during about 1 turns, launcher gets 100 % chance to move 1 card "elixir of poison" into his exile, 
-demence 4 madness, "dark " type 2, 100 % succeeding, launcher gets 100 % chance of taking +4 in critical hit, +4 in critical failure, and this during about 4 turns, in about 2 turns launcher gets 100 % chance of taking +1 in confusion, and this during about 2 turns, 
-complot 4 plot, "dark " type 2, 80 % succeeding, launcher gets 100 % chance to take 1 card from his deck, target gets 100 % chance to take 1 card from his deck, 
-occasionDuLarron 4 chance of the thief, "dark " type 2, follow the status "sleep" from the target, 100 % succeeding, launcher gets 100 % chance to take 1 card in the target's deck, 
-exacerbation 4 exacerbation, "dark " type 2, 100 % succeeding, The launcher takes 4 in his level of his current type, The target takes 4 in his level of his current type, 
-sadique 4 sadistic, "dark " type 3, 100 % succeeding, The launcher takes the "sadistic" talent (+2 of power on "multi-hit" launched moves, +1 of power on "fairy " received moves), 
-insomnie 4 insomnia, "dark " type 4, 100 % succeeding, launcher gets 100 % chance of taking -2 in sleep, and this during about 8 turns, 
-verrePartage 4 shared glass, "dark " type 5, 100 % succeeding, in about 2 turns launcher gets 50 % chance of taking +1 in poison, and this during about 2 turns, in about 2 turns target gets 50 % chance of taking +1 in poison, and this during about 2 turns, 
-machouille 4 crunch, "dark " type 6, 8 power level physical, 100 % succeeding, target gets 20 % chance of taking -1 in physical defense, and this during about 4 turns, target gets 20 % chance of taking +1 in fear, and this during about 1 turns, 
-pickpocket 4 pickpocket, "dark " type 6, 100 % succeeding, launcher gets 100 % chance to take 1 card in the target's deck, 
-elfeNoir 4 dark elf, "dark " type 6, 100 % succeeding, The launcher takes the "dark elf" talent (+3 of power on "dark " launched moves, +2 of power on "poison" launched moves, +1 of power on "special" launched moves, -2 of power on "physical" launched moves, +3 of power on "physical" received moves, +2 of power on "sword" received moves, +1 of power on "fairy " received moves, -1 of power on "special" received moves), 
-hacheDeMeurtrier 4 murderous axe, "dark " type 6, 6 power level physical, has critical hit to level 2, 100 % succeeding, target gets 10 % chance of taking +1 in poison, and this during about 1 turns, 
-bousculade 4 rush, "dark " type 8, 4 power level physical, 100 % succeeding, launcher gets 75 % chance to take 1 card in the target's deck, 
-degommage 4 knock out, "dark " type 8, 5 power level physical, 100 % succeeding, target gets 100 % chance to move 1 card into his discard, 
-clocheDeMinuit 4 midnight ring, "dark " type 8, 100 % succeeding, launcher gets 100 % chance of taking +2 in physical move, +2 in special move, +2 in critical hit, and this during about 4 turns, launcher gets 100 % chance of taking -2 in confusion, -2 in fear, -2 in sleep, and this during about 4 turns, launcher gets 100 % chance to take 1 card "dark " from his deck, 
-chapardage 4 rip-off, "dark " type 10, 100 % succeeding, launcher gets 100 % chance to take 1 card in the target's hand, 
-chocTerreur 4 shock from terror, "dark " type 12, follow the status "fear" from the target, 10 power level special, has critical hit to level 1, 100 % succeeding, 
-nuitTenebreuse 4 dark night, "dark " type 12, 100 % succeeding, Set the "dark night" environment (+5 of power on "shock from terror" launched moves, +3 of power on "nightmare" launched moves, +2 of power on "dark " launched moves, +1 of power on "ghost " launched moves, -4 of power on "grass " launched moves, -2 of power on "fairy " launched moves), 
-envol 4 flight, "flying " type, only follows the "flying " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-picpic 4 peck, "flying " type, 3 power level physical, 100 % succeeding, 
-dispersePoudre 4 dispatcher of powder, "flying " type, 100 % succeeding, target gets 100 % chance to move 1 card "powder" into his exile, 
-volLibre 4 free trade, "flying " type, 100 % succeeding, Allow the launcher to choose his type during 4 turns, 
-rebond 4 bounce, "flying " type, 100 % succeeding, launcher gets 100 % chance of taking +1 in dodge, and this during about 4 turns, 
-volFrenetique 4 frenetic flight, "flying " type 1, 100 % succeeding, launcher gets 100 % chance of taking +2 in dodge, and this during about 4 turns, 
-coupDeVent 4 blowing wind, "flying " type 2, 5 power level special, 100 % succeeding, 
-volDuRapace 4 raptor flight, "flying " type 4, 100 % succeeding, launcher gets 100 % chance of taking +2 in succeeding, and this during about 8 turns, 
-aileTranchante 4 sharping wing, "flying " type 4, 8 power level physical, has critical hit to level 1, 100 % succeeding, 
-tornade 4 gust, "flying " type 6, 10 power level special, 100 % succeeding, target gets 10 % chance to move 1 card into his exile, 
-ventContraire 4 tailwind, "flying " type 7, 100 % succeeding, target gets 100 % chance to move 2 card "wind" into his exile, 
-pluieDePlume 4 FeatherDance, "flying " type 8, 100 % succeeding, launcher gets 100 % chance of taking +1 in succeeding, +1 in dodge, and this during about 4 turns, target gets 100 % chance of taking -1 in succeeding, -1 in dodge, and this during about 4 turns, 
-erosionDesRoches 4 erosion of the rocks, "flying " type 9, 80 % succeeding, target gets 100 % chance to move 2 card "rock " into his exile, 
-becVrille 4 drill peck, "flying " type 10, 10 power level physical, has critical hit to level 1, 100 % succeeding, 
-cyclone 4 whirlwind, "flying " type 12, 15 power level special, 100 % succeeding, target gets 30 % chance to move 1 card into his exile, 
-cartePique 4 sky attack, "flying " type 16, 15 power level physical, has critical hit to level 2, has critical failure to level 1, 100 % succeeding, target gets 20 % chance of taking +1 in fear, and this during about 1 turns, 
-piedDArgile 4 foot of clay, "ground " type, only follows the "ground " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-jetDeSable 4 sand-attack, "ground " type, 90 % succeeding, target gets 100 % chance of taking -1 in succeeding, and this during about 4 turns, 
-vibrationDuSol 4 ground vibration, "ground " type, 3 power level special, 100 % succeeding, 
-prospection 4 prospecting, "ground " type, 100 % succeeding, launcher gets 100 % chance to take 1 card "stat" from his deck, 
-minageEnergetique 4 energetic mining, "ground " type 2, 100 % succeeding, in about 4 turns launcher gets 100 % chance of taking +3 in special move, and this during about 8 turns, 
-creusement 4 dig out, "ground " type 4, 100 % succeeding, launcher gets 100 % chance to take 1 card "ground " from his deck, 
-ondeTellurique 4 telluric wave, "ground " type 4, 8 power level special, 100 % succeeding, target gets 10 % chance of taking -1 in special defense, and this during about 8 turns, 
-bainDeBoue 4 bath of mud, "ground " type 5, 100 % succeeding, launcher gets 100 % chance of taking -1 in burn, -1 in frost, -1 in poison, and this during about 4 turns, 
-tempeteDeSable 4 sand storm, "ground " type 5, 100 % succeeding, Set the "sand storm" environment (+2 of power on "wind" launched moves, -3 of power on "fire " launched moves, -2 of power on "flying " launched moves, -1 of power on "grass " launched moves), 
-jetDeBoue 4 mud-slap, "ground " type 6, 4 power level special, 90 % succeeding, target gets 100 % chance of taking -2 in succeeding, and this during about 4 turns, 
-nain 4 dwarf, "ground " type 6, 100 % succeeding, The launcher takes the "dwarf" talent (+10 of power on "axe" launched moves, -5 of power on "special" launched moves, +4 of power on "grass " received moves, -3 of power on "ground " received moves, -3 of power on "rock " received moves, -3 of power on "steel " received moves, -2 of power on "special" received moves), 
-glissementDeTerrain 4 landslip, "ground " type 10, 10 power level physical, 100 % succeeding, 
-torrentDeBoue 4 muddy stream, "ground " type 12, 8 power level special, 100 % succeeding, target gets 100 % chance of taking -2 in succeeding, and this during about 8 turns, 
-seisme 4 earthquake, "ground " type 15, 15 power level physical, 100 % succeeding, 
-nageTellurique 4 telluric swim, "ground " type 18, 100 % succeeding, launcher gets 100 % chance of taking +1 in succeeding, +3 in dodge, and this during about 8 turns, 
-explosionDeBoue 4 muddy explosion, "ground " type 22, 16 power level special, 100 % succeeding, target gets 100 % chance of taking -2 in succeeding, and this during about 8 turns, 
-enrochement 4 rip-rap, "rock " type, only follows the "rock " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-eclatPrecieux 4 precious splinter, "rock " type, 3 power level physical, 100 % succeeding, 
-stabilite 4 stability, "rock " type, 100 % succeeding, The launcher's type cannot be changed during 4 turns, 
-nuageDePoussiere 4 drop of dust, "rock " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in dodge, and this during about 8 turns, 
-jetDePierre 4 rock throw, "rock " type 1, 5 power level physical, 90 % succeeding, 
-chuteDePierre 4 big rock throw, "rock " type 3, 10 power level physical, 85 % succeeding, 
-regardPetrifiant 4 petrificus, "rock " type 4, 100 % succeeding, target gets 100 % chance of taking +1 in paralysis, and this during about 4 turns, 
-coeurDePierre 4 heart stone, "rock " type 4, 100 % succeeding, launcher gets 100 % chance of taking -2 in confusion, and this during about 8 turns, 
-muraille 4 rock barrier, "rock " type 5, 100 % succeeding, launcher gets 100 % chance of taking +4 in physical defense, -2 in succeeding, and this during about 8 turns, 
-ruineAntique 4 ancient ruin, "rock " type 5, 100 % succeeding, Set the "ancient ruin" environment (+8 of power on "ancient power" launched moves, +1 of power on "ghost " launched moves), 
-rayonGemme 4 power gem, "rock " type 6, 10 power level special, 80 % succeeding, 20 % chance of changing the type of the target into "rock ", 
-hacheDeDiamant 4 diamont-tipped axe, "rock " type 6, 6 power level physical, has critical hit to level 2, 100 % succeeding, target gets 10 % chance of taking +1 in fear, and this during about 1 turns, 
-eboulement 4 rock slide, "rock " type 8, 15 power level physical, 90 % succeeding, target gets 20 % chance of taking +1 in fear, and this during about 1 turns, 
-pouvoirAntique 4 ancient power, "rock " type 12, 12 power level special, 100 % succeeding, launcher gets 10 % chance of taking +1 in physical move, +1 in physical defense, +1 in special move, +1 in special defense, and this during about 8 turns, 
-graveDansLeMarbre 4 marble zone, "rock " type 15, 100 % succeeding, The launcher's type cannot be changed during 8 turns, The target's type cannot be changed during 8 turns, 
-jetDeMassif 4 massif thrower, "rock " type 18, 30 power level physical, 60 % succeeding, target gets 80 % chance of taking +1 in fear, and this during about 1 turns, 
-forteresse 4 fortress, "rock " type 22, 100 % succeeding, launcher gets 100 % chance of taking +8 in physical defense, -4 in succeeding, and this during about 8 turns, 
-electrification 4 electrification, "electric " type, only follows the "electric " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-frottementElectrostatique 4 nuzzle, "electric " type, 3 power level physical, 100 % succeeding, 
-electronLibre 4 free electron, "electric " type, 100 % succeeding, Allow the launcher to choose his type during 4 turns, Allow the launcher to change his type during 4 turns, 
-flashElectrique 4 electric flash, "electric " type, 100 % succeeding, launcher gets 50 % chance of taking +1 in succeeding, and this during about 4 turns, launcher gets 50 % chance of taking -1 in confusion, and this during about 1 turns, target gets 50 % chance of taking -1 in succeeding, and this during about 4 turns, target gets 50 % chance of taking +1 in fear, and this during about 1 turns, 
-energisation 4 energization, "electric " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in special move, and this during about 8 turns, 
-electrochocMineur 4 little electroshock treatement, "electric " type 1, 4 power level special, 100 % succeeding, target gets 10 % chance of taking +1 in paralysis, and this during about 1 turns, 
-tetanisation 4 tetanization, "electric " type 2, 100 % succeeding, target gets 100 % chance of taking +1 in paralysis, and this during about 1 turns, 
-electrochocMajeur 4 big electroshock treatement, "electric " type 5, 8 power level special, 100 % succeeding, target gets 15 % chance of taking +1 in paralysis, and this during about 1 turns, 
-poingEclair 4 thunderpunch, "electric " type 5, 8 power level physical, 100 % succeeding, target gets 10 % chance of taking +1 in paralysis, and this during about 1 turns, 
-protectionElectrostatique 4 electric shelter, "electric " type 5, 100 % succeeding, The launcher's type cannot be changed during 8 turns, 
-cageEclair 4 thunder wave, "electric " type 6, 100 % succeeding, target gets 100 % chance of taking +2 in paralysis, and this during about 4 turns, 
-mobiliteElectrique 4 electric mobility, "electric " type 6, 100 % succeeding, launcher gets 100 % chance of taking -2 in paralysis, and this during about 8 turns, 
-hacheDeFoudre 4 lightning axe, "electric " type 6, 6 power level physical, has critical hit to level 2, 100 % succeeding, target gets 10 % chance of taking +1 in paralysis, and this during about 1 turns, 
-crocEclair 4 thunder fang, "electric " type 8, 6 power level physical, 100 % succeeding, target gets 20 % chance of taking +1 in paralysis, and this during about 2 turns, 
-chargeElectrifiee 4 volt tackle, "electric " type 10, 20 power level physical, launcher takes 30 % damage, 80 % succeeding, 
-tonnerre 4 thunderbolt, "electric " type 12, 12 power level special, 100 % succeeding, target gets 15 % chance of taking +1 in paralysis, and this during about 2 turns, 
-verrouElectrostatique 4 electric lock, "electric " type 15, 100 % succeeding, The target's type cannot be changed during 8 turns, 
-fataleFoudre 4 thunder, "electric " type 18, 20 power level special, 75 % succeeding, target gets 25 % chance of taking +1 in paralysis, and this during about 2 turns, 
-hydrolisation 4 hydrology, "water " type, only follows the "water " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-moiteur 4 damp, "water " type, 100 % succeeding, target gets 100 % chance to move 1 card "explosion" into his exile, 
-bombeAEau 4 water bomb, "water " type, 3 power level physical, 90 % succeeding, 
-elixirDeVitalite 4 elixir of energy, "water " type, has critical failure to level 1, 100 % succeeding, add 8 health points to the launcher, 
-hydratation 4 hydration, "water " type 1, 100 % succeeding, add 5 health points to the launcher, launcher gets 100 % chance of taking -1 in burn, and this during about 8 turns, 
-eauPurifiante 4 purifying water, "water " type 1, 100 % succeeding, launcher gets 100 % chance of taking -1 in burn, -1 in poison, and this during about 8 turns, 
-ecume 4 bubble, "water " type 1, 3 power level special, 100 % succeeding, target gets 20 % chance of taking -1 in succeeding, and this during about 4 turns, 
-purificationDElixir 4 purging elixir, "water " type 1, follows the number of cards "elixirDePoison" in the launcher's hand, 100 % succeeding, launcher gets 100 % chance to move 1 card "elixir of poison" into his exile, The launcher gets 1 cards "elixir of energy" in his hand, 
-antigel 4 ice heal, "water " type 2, 100 % succeeding, launcher gets 100 % chance of taking -1 in frost, and this during about 8 turns, 
-bulleDEau 4 bubble beam, "water " type 3, 5 power level special, 100 % succeeding, target gets 10 % chance of taking -1 in succeeding, and this during about 2 turns, 
-vibraqua 4 water pulse, "water " type 4, 6 power level special, 100 % succeeding, target gets 20 % chance of taking +1 in confusion, and this during about 1 turns, 
-chargeDuThon 4 tuna's pulse, "water " type 5, 15 power level physical, launcher takes 30 % damage, 80 % succeeding, 
-pluie 4 rain, "water " type 5, 100 % succeeding, Set the "rain" environment (+3 of power on "water " launched moves, +2 of power on "electric " launched moves, +1 of power on "grass " launched moves, -3 of power on "fire " launched moves), 
-saumure 4 brine, "water " type 6, 5 power level special, 100 % succeeding, target gets 100 % chance to move 1 card "ice " into his exile, 
-hacheDeCorail 4 coral axe, "water " type 6, 6 power level physical, has critical hit to level 2, 100 % succeeding, launcher gets 10 % chance of taking +1 in special defense, and this during about 4 turns, 
-filetDePeche 4 net, "water " type 8, 100 % succeeding, target gets 100 % chance of taking +2 in critical failure, and this during about 4 turns, 
-ebullition 4 boiling, "water " type 9, follow the status "burn" from the launcher, 7 power level special, 100 % succeeding, target gets 80 % chance of taking +1 in burn, and this during about 2 turns, 
-erosionDesSols 4 erosion of the floors, "water " type 9, 80 % succeeding, target gets 100 % chance to move 2 card "ground " into his exile, 
-crocRequin 4 fang of shark, "water " type 12, 12 power level physical, has critical hit to level 1, 100 % succeeding, target gets 50 % chance of taking +1 in fear, and this during about 1 turns, 
-vagueScelerate 4 wicked wave, "water " type 14, 15 power level special, 100 % succeeding, 
-allumage 4 lighting, "fire " type, only follows the "fire " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-elixirDePuissance 4 elixir of power, "fire " type, has critical failure to level 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in special move, and this during about 4 turns, 
-poudreBrulante 4 burning powder, "fire " type, 80 % succeeding, target gets 100 % chance of taking +1 in burn, and this during about 1 turns, 
-flammeche 4 ember, "fire " type, 3 power level special, 100 % succeeding, 
-cocktailMolotov 4 molotov cocktail, "fire " type 1, 5 power level physical, 80 % succeeding, target gets 5 % chance of taking +1 in burn, and this during about 1 turns, 
-surchauffe 4 overheat, "fire " type 2, 100 % succeeding, launcher gets 100 % chance of taking +3 in special move, and this during about 4 turns, in about 2 turns launcher gets 100 % chance of taking +1 in burn, -2 in frost, and this during about 2 turns, 
-epeeDeMagma 4 swordfire, "fire " type 3, 5 power level physical, has critical hit to level 1, 100 % succeeding, target gets 5 % chance of taking +1 in burn, and this during about 1 turns, 
-poingDeFeu 4 fire punch, "fire " type 4, 8 power level physical, 100 % succeeding, target gets 10 % chance of taking +1 in burn, and this during about 1 turns, 
-ventBrulant 4 burning wind, "fire " type 5, 90 % succeeding, target gets 100 % chance of taking +1 in burn, and this during about 4 turns, 
-chaleurEtouffante 4 oppressive heat, "fire " type 5, 100 % succeeding, Set the "oppressive heat" environment (+3 of power on "fire " launched moves, -3 of power on "ice " launched moves, -2 of power on "water " launched moves, -1 of power on "grass " launched moves), 
-crocFeu 4 fire fang, "fire " type 7, 6 power level physical, 100 % succeeding, target gets 20 % chance of taking +1 in burn, and this during about 2 turns, 
-puissanceBrulante 4 burning power, "fire " type 8, follow the status "burn" from the launcher, 100 % succeeding, launcher gets 100 % chance of taking +2 in special move, +2 in special defense, and this during about 8 turns, 
-attiseFlamme 4 stirring up, "fire " type 9, follow the status "burn" from the target, 5 power level special, 100 % succeeding, target gets 100 % chance of taking +1 in burn, and this during about 4 turns, 
-lanceFlamme 4 flamethrower, "fire " type 10, 15 power level special, 100 % succeeding, target gets 15 % chance of taking +1 in burn, and this during about 2 turns, 
-rouladeEnflammee 4 inflamed roll, "fire " type 12, 10 power level physical, 80 % succeeding, launcher gets 100 % chance of taking +1 in dodge, and this during about 8 turns, target gets 20 % chance of taking +1 in burn, and this during about 1 turns, 
-deflagration 4 fire blast, "fire " type 18, 20 power level special, has critical failure to level 1, 100 % succeeding, target gets 25 % chance of taking +1 in burn, and this during about 2 turns, 
-etudeChimique 4 chimical study, "poison" type, only follows the "poison" type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-elixirDePoison 4 elixir of poison, "poison" type, has critical failure to level 1, 100 % succeeding, in about 2 turns launcher gets 100 % chance of taking +2 in poison, and this during about 1 turns, 
-gazPutride 4 putrid gas, "poison" type, 3 power level special, 100 % succeeding, 
-antidote 4 antidote, "poison" type, 100 % succeeding, launcher gets 100 % chance of taking -1 in poison, and this during about 8 turns, 
-poudreToxique 4 poison powder, "poison" type, 80 % succeeding, target gets 100 % chance of taking +1 in poison, and this during about 1 turns, 
-recherche 4 search, "poison" type, 100 % succeeding, launcher gets 100 % chance to take 1 card "status" from his deck, 
-mithridatisation 4 mithridatisme, "poison" type 1, 100 % succeeding, in about 4 turns launcher gets 100 % chance of taking -2 in poison, and this during about 8 turns, 
-transfusion 4 transfusion, "poison" type 1, follow the status "poison" from the launcher, 90 % succeeding, target gets 100 % chance of taking +2 in poison, and this during about 4 turns, 
-piqueEmpoisonnee 4 poisoned pike, "poison" type 1, 3 power level physical, 100 % succeeding, target gets 50 % chance of taking +1 in poison, and this during about 2 turns, 
-jetDAcide 4 acid thrower, "poison" type 2, 4 power level special, 100 % succeeding, target gets 20 % chance of taking -1 in physical defense, and this during about 12 turns, 
-empoisonnement 4 poisoning, "poison" type 3, 90 % succeeding, target gets 100 % chance of taking +1 in poison, and this during about 4 turns, 
-alchimiste 4 alchemist, "poison" type 4, 100 % succeeding, The launcher takes the "alchemist" talent (+3 of power on "explosion" launched moves, +2 of power on "poison" launched moves, +1 of power on "fire " launched moves, +2 of power on "physical" received moves), 
-livraisonDElixir 4 elixir delivery, "poison" type 4, follows the number of cards "poison" in the launcher's hand, 100 % succeeding, launcher gets 100 % chance to move 1 card "poison" into his exile, The target gets 1 cards "elixir of poison" in his hand, 
-bombeAcide 4 acid bomb, "poison" type 5, 7 power level special, 100 % succeeding, target gets 50 % chance of taking -2 in physical defense, and this during about 12 turns, 
-cadeauEmpoisonne 4 poisoned gift, "poison" type 6, 90 % succeeding, add 20 health points to the target, target gets 100 % chance of taking +1 in poison, and this during about 12 turns, 
-dissolution 4 dissolving, "poison" type 8, 100 % succeeding, target gets 100 % chance of taking -1 in physical defense, and this during about 8 turns, target gets 100 % chance to move 2 card "powder" into his exile, 
-infection 4 stench, "poison" type 9, 90 % succeeding, in about 4 turns target gets 100 % chance of taking +2 in poison, and this during about 8 turns, 
-insecticide 4 insecticide, "poison" type 10, 100 % succeeding, target gets 100 % chance to move 2 card "bug " into his exile, 
-chocPoison 4 shock poison, "poison" type 12, follow the status "poison" from the target, 5 power level special, 100 % succeeding, 
-explosionDElixir 4 elixir explosion, "poison" type 14, follows the number of cards "elixir" in the target's hand, 5 power level special, 100 % succeeding, target gets 75 % chance of taking +1 in fear, and this during about 1 turns, target gets 100 % chance to move 1 card "elixir" into his exile, 
-insectisation 4 insectarium, "bug " type, only follows the "bug " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-taillade 4 fury cutter, "bug " type, 3 power level physical, 100 % succeeding, 
-secretion 4 string shot, "bug " type, 100 % succeeding, target gets 100 % chance of taking -1 in succeeding, and this during about 4 turns, 
-traitDeMiel 4 honey treatement, "bug " type, 100 % succeeding, add 5 health points to the launcher, launcher gets 100 % chance of taking -1 in poison, and this during about 4 turns, 
-armureDeChitine 4 armour of chitin, "bug " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in physical defense, +1 in special defense, and this during about 8 turns, 
-vampirisme 4 leech life, "bug " type 1, 4 power level physical, launcher take 50 % damage, 100 % succeeding, target gets 5 % chance of taking +1 in poison, and this during about 1 turns, 
-piqureProfonde 4 poison sting, "bug " type 1, 5 power level physical, has critical hit to level 1, 100 % succeeding, target gets 30 % chance of taking +1 in poison, and this during about 1 turns, 
-bourdon 4 buzz, "bug " type 2, 4 power level special, 90 % succeeding, launcher gets 20 % chance of taking +1 in special move, and this during about 2 turns, 
-cocon 4 cocoon, "bug " type 3, 100 % succeeding, launcher gets 100 % chance of taking +8 in physical defense, +8 in special defense, and this during about 4 turns, launcher gets 100 % chance of taking +8 in sleep, and this during about 4 turns, 
-geleeRoyale 4 royale gelly, "bug " type 5, 100 % succeeding, add 15 health points to the launcher, launcher gets 100 % chance of taking -1 in poison, and this during about 8 turns, 
-appelALaColonie 4 calling to colony, "bug " type 5, 70 % succeeding, launcher gets 100 % chance to take 2 card "bug " from his deck, 
-toileGluante 4 sticky web, "bug " type 6, 100 % succeeding, target gets 100 % chance of taking -2 in succeeding, and this during about 4 turns, 
-nueeDeDard 4 pin missile, "bug " type 6, 3 power level physical, can hit 6 times, 100 % succeeding, target gets 10 % chance of taking +1 in poison, and this during about 2 turns, 
-pheromoneDeSurvie 4 survival pheromone, "bug " type 6, 70 % succeeding, launcher gets 100 % chance to take 2 card "bug " from his discard, 
-concertDeBourdon 4 concert of bumblebea, "bug " type 7, 4 power level special, can hit 6 times, 75 % succeeding, launcher gets 20 % chance of taking +1 in special move, and this during about 4 turns, target gets 10 % chance of taking +1 in fear, and this during about 1 turns, 
-poudreDePapillon 4 butterfly powder, "bug " type 8, 90 % succeeding, launcher gets 100 % chance of taking +1 in special defense, +2 in dodge, and this during about 8 turns, 
-injectionDePollen 4 injection of pollen, "bug " type 10, 75 % succeeding, 100 % chance of changing the type of the target into "grass ", 
-butinage 4 foraging, "bug " type 14, 75 % succeeding, launcher gets 100 % chance to take 1 card in the target's deck, 1 card in the target's discard, 1 card in the target's exile, 
-feerie 4 enchantment, "fairy " type, only follows the "fairy " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-rireNiais 4 giggle, "fairy " type, 100 % succeeding, target gets 100 % chance of taking +1 in confusion, and this during about 1 turns, 
-chatouille 4 tickle, "fairy " type, 100 % succeeding, target gets 100 % chance of taking -1 in physical move, -1 in physical defense, and this during about 4 turns, 
-confidence 4 confide, "fairy " type, 100 % succeeding, target gets 100 % chance of taking -1 in special move, -1 in special defense, and this during about 4 turns, 
-elixirDeCourage 4 elixir of bravery, "fairy " type, has critical failure to level 1, 100 % succeeding, launcher gets 100 % chance of taking -1 in fear, and this during about 4 turns, 
-auraFeerique 4 fairy aura, "fairy " type 1, 100 % succeeding, launcher gets 100 % chance of taking -2 in curse, and this during about 8 turns, 
-sonophilie 4 audio power, "fairy " type 1, 100 % succeeding, launcher gets 100 % chance to take 1 card "sound" from his deck, 
-charme 4 charm, "fairy " type 1, 100 % succeeding, target gets 100 % chance of taking -2 in physical move, and this during about 4 turns, 
-grosCalin 4 play rough, "fairy " type 1, 4 power level physical, 100 % succeeding, target gets 30 % chance of taking +1 in confusion, and this during about 1 turns, 
-botteDeSeptLieues 4 seven-league boot, "fairy " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in critical failure, and this during about 8 turns, The launcher takes 7 in his level of his current type, The launcher can't choose his type during 14 turns, 
-bouclierMagique 4 magical shield, "fairy " type 2, 100 % succeeding, launcher gets 100 % chance of taking +2 in special defense, and this during about 8 turns, 
-douxBaiser 4 sweet kiss, "fairy " type 3, 100 % succeeding, target gets 100 % chance of taking +1 in confusion, and this during about 4 turns, 
-epeeChevaleresque 4 magic sword, "fairy " type 3, 5 power level physical, has critical hit to level 1, 100 % succeeding, launcher gets 5 % chance of taking +1 in physical move, and this during about 4 turns, 
-basLesPattes 4 hands off, "fairy " type 4, 80 % succeeding, target gets 100 % chance to move 2 card "hand" into his exile, 
-adoucissement 4 softening, "fairy " type 4, 100 % succeeding, target gets 100 % chance to move 1 card "offensive" into his discard, 
-ventFeerique 4 fairy wind, "fairy " type 4, 5 power level special, 100 % succeeding, 
-poudrier 4 powdering, "fairy " type 5, 100 % succeeding, launcher gets 100 % chance to take 2 card "powder" from his deck, 
-vampibaiser 4 draining kiss, "fairy " type 6, 5 power level special, launcher take 75 % damage, 100 % succeeding, target gets 50 % chance of taking -1 in physical move, -1 in special move, and this during about 3 turns, target gets 50 % chance of taking +1 in confusion, and this during about 3 turns, 
-eclatMagique 4 dazzling gleam, "fairy " type 8, 8 power level special, 100 % succeeding, target gets 50 % chance of taking -2 in succeeding, and this during about 2 turns, 
-berceuse 4 lullaby, "fairy " type 9, 90 % succeeding, target gets 100 % chance of taking +2 in sleep, and this during about 4 turns, 
-reveTroublant 4 disquieting dream, "fairy " type 10, follow the status "sleep" from the target, 100 % succeeding, target gets 100 % chance of taking +1 in confusion, and this during about 4 turns, 
-explosionMagique 4 magical explosion, "fairy " type 12, 15 power level special, 100 % succeeding, launcher gets 100 % chance of taking -2 in special move, -2 in special defense, and this during about 4 turns, target gets 80 % chance of taking -2 in succeeding, and this during about 4 turns, 
-vegetalisation 4 vegetation, "grass " type, only follows the "grass " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-coupDEpine 4 thorny hit, "grass " type, 3 power level physical, 100 % succeeding, 
-poudreDodo 4 sleep powder, "grass " type, 80 % succeeding, target gets 100 % chance of taking +1 in sleep, and this during about 1 turns, 
-poudreParalysante 4 paralising powder, "grass " type, 80 % succeeding, target gets 100 % chance of taking +1 in paralysis, and this during about 1 turns, 
-armureDEcorce 4 armour of bark, "grass " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in physical defense, and this during about 8 turns, 
-volDeVie 4 absorb, "grass " type 1, 3 power level special, launcher take 50 % damage, 100 % succeeding, 
-racineNutritive 4 nourishing root, "grass " type 2, 100 % succeeding, add 20 health points to the launcher, launcher gets 100 % chance of taking +1 in paralysis, and this during about 4 turns, 
-syntheseChlorophyllienne 4 synthesis, "grass " type 4, 100 % succeeding, add 10 health points to the launcher, in about 4 turns launcher gets 100 % chance of taking +1 in special move, +1 in special defense, and this during about 8 turns, 
-piegeDeRacine 4 trap of root, "grass " type 5, 4 power level physical, 80 % succeeding, target gets 50 % chance of taking +1 in paralysis, and this during about 1 turns, target gets 100 % chance to move 1 card "foot" into his exile, 
-megaSangsue 4 mega drain, "grass " type 5, 6 power level special, launcher take 50 % damage, 100 % succeeding, 
-fouetLiane 4 vine whip, "grass " type 6, 6 power level physical, 100 % succeeding, 
-elfe 4 elf, "grass " type 6, 100 % succeeding, The launcher takes the "elf" talent (+3 of power on "grass " launched moves, +2 of power on "fairy " launched moves, +1 of power on "special" launched moves, -2 of power on "physical" launched moves, +3 of power on "physical" received moves, +2 of power on "axe" received moves), 
-tempeteVerte 4 leaf storm, "grass " type 7, 10 power level special, 100 % succeeding, launcher gets 100 % chance of taking +1 in sleep, and this during about 1 turns, 
-megafouet 4 power whip, "grass " type 9, 9 power level physical, 100 % succeeding, 
-gigaSangsue 4 giga drain, "grass " type 10, 10 power level special, launcher take 75 % damage, 100 % succeeding, 
-enracinement 4 taking root, "grass " type 10, 100 % succeeding, target gets 100 % chance of taking +1 in paralysis, and this during about 4 turns, 50 % chance of changing the type of the target into "grass ", 
-recolte 4 harvest, "grass " type 12, 100 % succeeding, launcher gets 100 % chance to take 2 card "grass " from his deck, 
-soleilRadieux 4 zenith, "grass " type 12, 100 % succeeding, Set the "zenith" environment (+8 of power on "solar beam" launched moves, +2 of power on "grass " launched moves, +1 of power on "fairy " launched moves, -4 of power on "dark " launched moves, -3 of power on "nightmare" launched moves, -2 of power on "ghost " launched moves), 
-lanceSoleil 4 solar beam, "grass " type 15, 15 power level special, 100 % succeeding, launcher gets 100 % chance of taking +2 in sleep, and this during about 2 turns, 
-spectralisation 4 ghost mind, "ghost " type, only follows the "ghost " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-rireEffrayant 4 frightening laugh, "ghost " type, 75 % succeeding, target gets 100 % chance of taking +1 in fear, and this during about 1 turns, 
-disparition 4 disappearance, "ghost " type 1, 100 % succeeding, launcher gets 100 % chance of taking +4 in dodge, and this during about 1 turns, 
-lechouille 4 lick, "ghost " type 1, 3 power level physical, 100 % succeeding, target gets 30 % chance of taking +1 in paralysis, and this during about 1 turns, 
-ventSpectral 4 spectral wind, "ghost " type 1, 6 power level special, 75 % succeeding, launcher gets 10 % chance of taking +1 in physical move, +1 in physical defense, +1 in special move, +1 in special defense, and this during about 8 turns, 
-griffeOmbre 4 shadow claw, "ghost " type 2, 4 power level physical, 100 % succeeding, target gets 20 % chance of taking +1 in fear, and this during about 1 turns, 
-dimensionSpectrale 4 spectral dimension, "ghost " type 2, 70 % succeeding, 100 % chance of changing the type of the launcher into "ghost ", 100 % chance of changing the type of the target into "ghost ", 
-absorptionDePuissance 4 power taking, "ghost " type 2, 100 % succeeding, launcher gets 100 % chance of taking +2 in special move, and this during about 8 turns, launcher gets 100 % chance of taking +1 in sleep, and this during about 2 turns, target gets 100 % chance of taking -2 in special move, and this during about 8 turns, 
-absorptionDeConcentration 4 taking concentration, "ghost " type 2, 100 % succeeding, launcher gets 100 % chance of taking +2 in special defense, and this during about 8 turns, launcher gets 100 % chance of taking +1 in sleep, and this during about 2 turns, target gets 100 % chance of taking -2 in special defense, and this during about 8 turns, 
-toucherMaudit 4 blasting touch, "ghost " type 3, 75 % succeeding, target gets 100 % chance of taking +1 in curse, and this during about 4 turns, 
-epeeMaudite 4 blasted sword, "ghost " type 3, 5 power level physical, has critical hit to level 1, 100 % succeeding, target gets 5 % chance of taking +1 in curse, and this during about 1 turns, 
-zoneImmaterielle 4 immaterialism, "ghost " type 5, 100 % succeeding, Set the "immaterialism" environment (-4 of power on "physical" launched moves), 
-bourasqueSpectrale 4 spectral squall, "ghost " type 6, 9 power level special, 75 % succeeding, launcher gets 15 % chance of taking +1 in physical move, +1 in physical defense, +1 in special move, +1 in special defense, and this during about 8 turns, target gets 10 % chance of taking +1 in fear, and this during about 1 turns, 
-revenante 4 card coming back, "ghost " type 6, 100 % succeeding, launcher gets 100 % chance to take 1 card from his discard, 
-annihilation 4 annihilation, "ghost " type 8, 80 % succeeding, target gets 100 % chance to move 1 card into his exile, 
-nouveauMaitre 4 new coming master, "ghost " type 10, 80 % succeeding, launcher gets 100 % chance to take 3 card in the target's exile, 
-chocMaudit 4 blasted shock, "ghost " type 12, follow the status "curse" from the target, 5 power level special, 100 % succeeding, target gets 100 % chance of taking +1 in curse, and this during about 4 turns, 
-pouvoirMalefique 4 blasting power, "ghost " type 15, 100 % succeeding, launcher gets 100 % chance of taking +3 in physical move, +3 in special move, and this during about 8 turns, in about 4 turns launcher gets 100 % chance of taking +4 in curse, and this during about 4 turns, 
-chatiment 4 punishment, "ghost " type 18, follows the number of cards " " in the target's hand, 2 power level special, 100 % succeeding, 
-piocheDemoniaque 4 demonic drawing, "ghost " type 20, follow the status "curse" from the launcher, 100 % succeeding, target gets 100 % chance of taking +1 in curse, and this during about 4 turns, launcher gets 100 % chance to take 1 card from his deck, target gets 100 % chance to take 1 card from his deck, 
-psychogenese 4 psychogenesis, "psychic " type, only follows the "psychic " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-souvenir 4 souvenir, "psychic " type, 100 % succeeding, launcher gets 100 % chance to take 2 card from his exile, 
-rayonDeprime 4 ray depression, "psychic " type, 3 power level special, 100 % succeeding, 
-concentration 4 concentrate, "psychic " type, 100 % succeeding, launcher gets 100 % chance of taking -2 in confusion, and this during about 4 turns, 
-reflexion 4 reflexion, "psychic " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in special move, and this during about 8 turns, 
-analyseDeRisque 4 risk analysis, "psychic " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in dodge, -2 in critical failure, and this during about 8 turns, 
-ideation 4 ideation, "psychic " type 1, 100 % succeeding, launcher gets 100 % chance to take 1 card "special" from his deck, 
-prevoyance 4 forethought, "psychic " type 1, 100 % succeeding, launcher can see 4 cards of his deck, 
-precalcul 4 precalculus, "psychic " type 1, 100 % succeeding, launcher gets 100 % chance of taking +4 in succeeding, and this during about 4 turns, 
-ondeEpileptique 4 epileptic wave, "psychic " type 1, 90 % succeeding, target gets 100 % chance of taking -4 in succeeding, and this during about 4 turns, 
-trouDeMemoire 4 mini amnesia, "psychic " type 2, 100 % succeeding, The target takes -6 in his level of his current type, 
-cauchemar 4 nightmare, "psychic " type 3, follow the status "sleep" from the target, 5 power level special, 80 % succeeding, 
-muselage 4 muzzling, "psychic " type 3, 80 % succeeding, target gets 100 % chance to move 2 card "mouth" into his exile, 
-prescience 4 futur sight, "psychic " type 3, 100 % succeeding, launcher can see 8 cards of his deck, 
-perturbationPsychique 4 psychic disruption, "psychic " type 4, 100 % succeeding, target gets 100 % chance of taking +1 in critical failure, and this during about 4 turns, 
-levikinesie 4 telekinesis, "psychic " type 4, 75 % succeeding, 100 % chance of changing the type of the target into "flying ", 
-accesALInconscient 4 rashness access, "psychic " type 4, 100 % succeeding, target shows 8 cards from his deck, 
-desamorcage 4 defusing, "psychic " type 4, 100 % succeeding, target gets 100 % chance to move 2 card "explosion" into his exile, 
-secoussePsychique 4 psyshock, "psychic " type 5, 6 power level special, 100 % succeeding, target gets 30 % chance of taking -1 in physical defense, -1 in special defense, and this during about 4 turns, 
-repos 4 relax, "psychic " type 5, 100 % succeeding, add 50 health points to the launcher, launcher gets 100 % chance of taking +2 in sleep, and this during about 4 turns, 
-preparationMentale 4 mental prepare, "psychic " type 5, 100 % succeeding, launcher gets 100 % chance of taking +2 in special move, +1 in succeeding, and this during about 4 turns, 
-apprentissageProfond 4 apprenticed, "psychic " type 5, 100 % succeeding, launcher gets 100 % chance of taking +2 in sleep, and this during about 2 turns, The launcher takes 8 in his level of his current type, 
-anticipation 4 anticipation, "psychic " type 6, 100 % succeeding, target shows 8 cards from his hand, 
-hachePsionique 4 psycho cut, "psychic " type 6, 6 power level physical, has critical hit to level 2, 100 % succeeding, target shows 4 cards from his deck, 
-hypnose 4 hypnosis, "psychic " type 8, 90 % succeeding, target gets 100 % chance of taking +1 in sleep, and this during about 4 turns, 
-devoreve 4 dream eater, "psychic " type 10, follow the status "sleep" from the target, 8 power level special, launcher take 100 % damage, 80 % succeeding, 
-amnesie 4 amnesia, "psychic " type 12, 100 % succeeding, The target takes -10 in his level of his current type, 
-metalisation 4 steelworks, "steel " type, only follows the "steel " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-jetDeBoulon 4 bolt thrower, "steel " type, 3 power level physical, 100 % succeeding, 
-volonteDeFer 4 willpower, "steel " type, 100 % succeeding, retrieves 4 turns from the duration of the draw prohibition for the launcher, 
-nerfDAcier 4 steal nerve, "steel " type 1, 100 % succeeding, launcher gets 100 % chance of taking -2 in critical failure, and this during about 8 turns, 
-armureDAcier 4 steel armour, "steel " type 1, 100 % succeeding, launcher gets 100 % chance of taking +2 in physical defense, -2 in dodge, and this during about 8 turns, 
-laserRouge 4 red laser, "steel " type 1, 3 power level special, 100 % succeeding, target gets 10 % chance of taking -1 in succeeding, and this during about 1 turns, 
-epeeDAcier 4 steal sword, "steel " type 3, 5 power level physical, has critical hit to level 1, 100 % succeeding, target gets 5 % chance of taking +1 in fear, and this during about 1 turns, 
-laserBleu 4 blue laser, "steel " type 4, 6 power level special, 100 % succeeding, target gets 10 % chance of taking -1 in succeeding, and this during about 2 turns, target gets 20 % chance of taking +1 in burn, and this during about 1 turns, 
-aimant 4 magnet, "steel " type 4, 100 % succeeding, launcher gets 100 % chance to take 1 card "steel " from his deck, 
-perceArmure 4 pearcing armour, "steel " type 5, 100 % succeeding, target gets 100 % chance of taking -2 in physical defense, and this during about 4 turns, 
-grincement 4 screech, "steel " type 5, 100 % succeeding, target gets 100 % chance of taking -2 in special defense, and this during about 4 turns, 
-aileDAcier 4 steel wing, "steel " type 6, 8 power level physical, has critical hit to level 1, 100 % succeeding, 100 % chance of changing the type of the launcher into "flying ", 
-graissage 4 lubricating, "steel " type 6, 100 % succeeding, launcher gets 100 % chance of taking +2 in succeeding, and this during about 8 turns, 
-bombeAimant 4 magnet bomb, "steel " type 8, 10 power level physical, never fails, 
-jetDePlasma 4 plasma thrower, "steel " type 8, 12 power level special, 80 % succeeding, launcher gets 100 % chance of taking +1 in burn, and this during about 2 turns, target gets 20 % chance of taking -1 in succeeding, and this during about 4 turns, target gets 40 % chance of taking +1 in burn, and this during about 2 turns, 
-miniaturisation 4 miniaturization, "steel " type 10, 100 % succeeding, launcher gets 100 % chance of taking -2 in physical move, -4 in physical defense, +6 in dodge, and this during about 8 turns, 
-regulationThermique 4 thermic regulation, "steel " type 12, 100 % succeeding, launcher gets 100 % chance of taking -2 in burn, -2 in frost, and this during about 8 turns, 
-explosionDePlasma 4 explosion of plasma, "steel " type 20, 30 power level special, launcher takes 50 % damage, 100 % succeeding, launcher gets 100 % chance of taking +2 in burn, and this during about 4 turns, target gets 100 % chance of taking -2 in succeeding, and this during about 8 turns, target gets 100 % chance of taking +2 in burn, and this during about 4 turns, 
-espritDragonique 4 dragonmind, "dragon " type, only follows the "dragon " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-dracoEternuement 4 dragon-sneeze, "dragon " type, 3 power level special, 100 % succeeding, 
-pression 4 pressure, "dragon " type, 100 % succeeding, The target takes -3 in his level of his current type, 
-criDuDragon 4 dragon shout, "dragon " type 1, 100 % succeeding, launcher gets 100 % chance of taking -1 in fear, and this during about 8 turns, 
-danseDuDragon 4 dragon dance, "dragon " type 2, 100 % succeeding, launcher gets 100 % chance of taking +1 in physical move, +1 in special move, +1 in succeeding, +1 in critical hit, and this during about 4 turns, 
-dracogriffe 4 dragon claw, "dragon " type 3, 5 power level physical, 100 % succeeding, 
-hurlementDuDragon 4 dragon screaming, "dragon " type 5, 5 power level special, 100 % succeeding, target gets 20 % chance of taking +1 in fear, and this during about 1 turns, 
-crocDragon 4 dragon fang, "dragon " type 8, 6 power level physical, 100 % succeeding, target gets 50 % chance of taking -1 in physical defense, and this during about 4 turns, target gets 30 % chance of taking +1 in fear, and this during about 1 turns, 
-chargeDuDragon 4 dragon rush, "dragon " type 10, 15 power level physical, launcher takes 30 % damage, 80 % succeeding, 
-silence 4 silence, "dragon " type 10, 100 % succeeding, target gets 100 % chance to move 2 card "sound" into his exile, 
-frenesie 4 rage, "dragon " type 12, follow the status "confusion" from the launcher, 6 power level special, can hit 4 times, 100 % succeeding, target gets 20 % chance of taking +1 in fear, and this during about 2 turns, 
-dracoblast 4 dragon blast, "dragon " type 14, 12 power level special, 100 % succeeding, target gets 50 % chance of taking +1 in fear, and this during about 2 turns, 
-respect 4 respect, "dragon " type 15, 100 % succeeding, The target takes the "respect" talent (-4 of power on "physical" launched moves, ), 
-humilite 4 humility, "dragon " type 15, 100 % succeeding, The target takes the "humility" talent (-4 of power on "special" launched moves, ), 
-colere 4 outrage, "dragon " type 16, 8 power level physical, can hit 4 times, 80 % succeeding, launcher gets 100 % chance of taking +1 in confusion, and this during about 4 turns, 
-dracochoc 4 dragon pulse, "dragon " type 20, 18 power level special, 100 % succeeding, target gets 75 % chance of taking +2 in confusion, and this during about 4 turns, 
-refroidissement 4 cooling, "ice " type, only follows the "ice " type of the launcher, 100 % succeeding, The launcher takes 1 in his level of his current type, 
-bouleDeNeige 4 snowball, "ice " type, 3 power level physical, 100 % succeeding, 
-elixirDeFraicheur 4 elixir of coolness, "ice " type, has critical failure to level 1, 100 % succeeding, launcher gets 100 % chance of taking -1 in sleep, and this during about 4 turns, 
-glissementDeMain 4 sliding hand, "ice " type, follows the number of cards " " in the launcher's hand, 100 % succeeding, launcher gets 100 % chance to take 1 card from his deck, move 1 card into his discard, 
-englacement 4 icing, "ice " type 1, 100 % succeeding, launcher gets 100 % chance of taking +1 in special defense, and this during about 8 turns, 
-poudreuse 4 powder snow, "ice " type 1, 3 power level special, 100 % succeeding, target gets 75 % chance of taking -1 in succeeding, and this during about 2 turns, 
-engourdissement 4 numbing, "ice " type 2, 100 % succeeding, The target doesn't draw during 2 turns, 
-ventGlacial 4 freezing wind, "ice " type 2, 5 power level special, 80 % succeeding, target gets 5 % chance of taking +1 in frost, and this during about 1 turns, 
-epeeDeGlace 4 iced sword, "ice " type 3, 5 power level physical, has critical hit to level 1, 100 % succeeding, target gets 5 % chance of taking +1 in frost, and this during about 1 turns, 
-poingGlace 4 ice punch, "ice " type 4, 8 power level physical, 100 % succeeding, target gets 10 % chance of taking +1 in frost, and this during about 1 turns, 
-grele 4 hail storm, "ice " type 5, 100 % succeeding, Set the "hail storm" environment (+3 of power on "ice " launched moves, +2 of power on "wind" launched moves, -3 of power on "grass " launched moves), 
-crocGivre 4 ice fang, "ice " type 6, 6 power level physical, 100 % succeeding, target gets 20 % chance of taking +1 in frost, and this during about 2 turns, 
-bourasqueGlaciale 4 freezing squall, "ice " type 6, 8 power level special, 80 % succeeding, target gets 10 % chance of taking +1 in frost, and this during about 2 turns, 
-graisseIsolante 4 thick Fat, "ice " type 6, 100 % succeeding, The launcher takes the "thick Fat" talent (-3 of power on "physical" launched moves, -2 of power on "fire " received moves, -2 of power on "ice " received moves, -1 of power on "physical" received moves), 
-stalagtite 4 icicle spear, "ice " type 9, 10 power level physical, has critical hit to level 1, 80 % succeeding, 
-glaciation 4 sheer cold, "ice " type 11, 80 % succeeding, target gets 100 % chance of taking +1 in frost, and this during about 4 turns, 
-avalanche 4 avalanche, "ice " type 12, 8 power level physical, 90 % succeeding, in about 1 turns target gets 30 % chance of taking +1 in frost, and this during about 2 turns, 
-chocGlace 4 ice shock, "ice " type 13, follow the status "frost" from the target, 5 power level special, 100 % succeeding, 
-stupeurGlacee 4 glaciate, "ice " type 14, 100 % succeeding, The target doesn't draw during 4 turns, 
-laserGlace 4 ice beam, "ice " type 16, 12 power level special, 100 % succeeding, target gets 25 % chance of taking +1 in frost, and this during about 2 turns, 
+normalisation 4 normalization, "normal" type, requires the launcher to be "normal" type, 100 % success, The launcher's level in his current type increases by 1, (normal, type)
+petiteTappe 4 little tapp, "normal" type, 3 physical power, 100 % success, (normal, contact, hand, physical, offensive)
+etincelleMagique 4 magical shine, "normal" type, 3 magical power, 100 % success, (normal, magical, offensive)
+camouflage 4 hideout, "normal" type, 100 % success, the launcher has a 100 % chance of becoming +1 in dodge, and that during about 4 turns, (normal, stat)
+bougeotte 4 wanderlust, "normal" type, 100 % success, the launcher has a 100 % chance of becoming -1 in paralysis, and that during about 4 turns, (normal, status)
+preservationNaturelle 4 natural preservation, "normal" type, works as a parry against a "type" card, 100 % success, (normal, parry)
+mefianceNaturelle 4 natural mistrust, "normal" type, works as a parry against a "manipulation" card, 100 % success, (normal, parry)
+prudence 4 prudence, "normal" type, 100 % success, the launcher has a 100 % chance to take 1 card "parry" from his deck, (normal, manipulation)
+normalisationReflexe 4 reflex normalization, "normal" type 1, works as a parry against a "ghost" card, 100 % success, 100 % chance of changing the launcher's type into "normal", (normal, parry, type)
+baillement 4 yawn, "normal" type 1, 75 % success, in about 1 turns the target has a 100 % chance of becoming +1 in sleep, and that during about 2 turns, (normal, mouth, status, offensive)
+monteeEnPuissance 4 increase in power, "normal" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in special attack, and that during about 8 turns, (normal, stat)
+postureNeutre 4 neutral talent, "normal" type 1, 100 % success, The launcher takes the "neutral" posture (), (normal, posture)
+echo 4 echo, "normal" type 1, works as a reaction against a "sound" card, 10 magical power, 100 % success, the launcher has a 100 % chance to take 1 card "sound" from his discard pile, take 1 card "sound" from his exile, (normal, sound, double try, reaction, magical, offensive, manipulation)
+perturbationAcoustique 4 acoustic disturbance, "normal" type 1, 3 magical power, 100 % success, the target has a 100 % chance to put 1 card "sound" into his exile, (normal, sound, magical, offensive, manipulation)
+reflet 4 double team, "normal" type 2, 90 % success, the launcher has a 100 % chance of becoming +1 in dodge, and that during about 8 turns, (normal, stat)
+griffe 4 scratch, "normal" type 2, 4 physical power, 100 % success, (normal, contact, hand, physical, offensive)
+grosseTappe 4 slap, "normal" type 3, 5 physical power, 100 % success, the target has a 10 % chance of becoming +1 in fear, and that during about 1 turns, (normal, contact, hand, physical, offensive)
+supplement 4 supplement, "normal" type 3, 100 % success, the launcher has a 100 % chance to take 1 card from his deck, (normal, manipulation)
+normalisationMutuelle 4 mutual normalization, "normal" type 4, 100 % success, 100 % chance of changing the launcher's type into "normal", 100 % chance of changing the target's type into "normal", (normal, offensive, type)
+rayonMagique 4 magical ray, "normal" type 4, 5 magical power, 100 % success, (normal, ray, magical, offensive)
+herbivore 4 herbivorous, "normal" type 5, 100 % success, The launcher takes the "herbivorous" posture (+4 power on "tackle" launched attacks, -3 power on "grass" received attacks, +3 power on "fang" received attacks), (normal, posture)
+plaquage 4 body slam, "normal" type 6, 10 physical power, 100 % success, the target has a 10 % chance of becoming +1 in paralysis, and that during about 1 turns, (normal, contact, physical, offensive)
+belier 4 take down, "normal" type 8, 15 physical power, the launcher suffers 30 % of the damages caused to the target, 70 % success, the target has a 10 % chance of becoming +1 in fear, and that during about 1 turns, (normal, tackle, contact, physical, offensive)
+flotDEnergie 4 little flood of energy, "normal" type 8, 10 magical power, 100 % success, (normal, magical, offensive)
+comboGriffe 4 fury swipes, "normal" type 10, 4 physical power, can hit up to 5 times, 100 % success, (normal, contact, hand, physical, offensive, multi-hit)
+deferlenteEnergetique 4 big flood of energy, "normal" type 15, 15 magical power, 100 % success, (normal, surge, magical, offensive)
+neutralisationGenerale 4 general neutralization, "normal" type 18, 100 % success, The launcher takes the "neutral" posture (), The target takes the "neutral" posture (), Changes the environment to "neutral" (), (normal, environment, posture, offensive)
+gigaImpact 4 giga impact, "normal" type 20, 30 physical power, the launcher suffers 50 % of the damages caused to the target, 90 % success, the target has a 50 % chance of becoming +2 in fear, and that during about 1 turns, (normal, tackle, contact, physical, offensive)
+vagueSonore 4 sound surge, "normal" type 22, works following the number of "sound" cards in the launcher's hand, 5 magical power, 100 % success, (normal, sound, surge, magical, offensive)
+salutation 4 salutation, "fighting" type, requires the launcher to be "fighting" type, 100 % success, The launcher's level in his current type increases by 1, (fighting, type)
+gonflette 4 bulk up, "fighting" type, 100 % success, the launcher has a 100 % chance of becoming +1 in physical attack, and that during about 4 turns, (fighting, stat)
+elixirDePerspicacite 4 elixir of perspicacity, "fighting" type, has a level 1 critical failiure, 100 % success, the launcher has a 100 % chance of becoming +1 in critical hit, and that during about 4 turns, (fighting, elixir, stat)
+petitPunch 4 little punch, "fighting" type, 3 physical power, 100 % success, (fighting, contact, hand, physical, offensive)
+evitementDeParade 4 parry avoidance, "fighting" type, works as a parry against a "parry" card, 100 % success, (fighting, parry)
+priseDArme 4 weapon taking, "fighting" type 1, 100 % success, the launcher has a 100 % chance to take 2 card "weapon" from his deck, (fighting, manipulation)
+deviationDArme 4 weapon ddeflection, "fighting" type 1, works as a parry against a "weapon" card, 100 % success, (fighting, parry)
+determination 4 determination, "fighting" type 1, 100 % success, the launcher has a 100 % chance to take 1 card "physical" from his deck, (fighting, manipulation)
+petitKick 4 little kick, "fighting" type 1, 4 physical power, 100 % success, (fighting, contact, foot, physical, offensive)
+enGarde 4 attention, "fighting" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in physical defense, and that during about 8 turns, (fighting, stat)
+ecraseMain 4 hand crushing, "fighting" type 1, works as a parry against a "hand" card, 4 physical power, 100 % success, (fighting, parry, physical, offensive)
+grosPunch 4 big punch, "fighting" type 2, 6 physical power, 100 % success, (fighting, contact, hand, physical, offensive)
+epeiste 4 sword fighter, "fighting" type 2, 100 % success, The launcher takes the "sword fighter" posture (+10 power on "sword" launched attacks, +2 power on "shield" launched attacks, -5 power on "sword" received attacks, -1 power on "shield" received attacks), (fighting, posture)
+grosKick 4 big kick, "fighting" type 3, 7 physical power, 100 % success, (fighting, contact, foot, physical, offensive)
+renforcement 4 trussing, "fighting" type 3, 100 % success, the launcher has a 100 % chance of becoming +2 in physical attack, and that during about 4 turns, (fighting, stat)
+criLiberatoire 4 free scream, "fighting" type 4, works following the launcher's "paralysis" status, 5 magical power, never fails, the launcher has a 100 % chance of becoming -1 in paralysis, and that during about 4 turns, (fighting, mouth, sound, magical, offensive, unmissable, status)
+fortePaume 4 force palm, "fighting" type 5, 5 physical power, 100 % success, the target has a 50 % chance of becoming +1 in paralysis, and that during about 1 turns, (fighting, contact, hand, physical, offensive)
+briseParade 4 break parry, "fighting" type 6, 5 physical power, 100 % success, the target has a 100 % chance to put 1 card "parry" into his discard pile, (fighting, contact, physical, offensive, manipulation)
+clocheDeCombat 4 ring of fight, "fighting" type 7, 100 % success, the launcher has a 100 % chance of becoming +3 in physical attack, and that during about 2 turns, the launcher has a 100 % chance of becoming -1 in fear, and that during about 4 turns, (fighting, sound, stat, status)
+uppercut 4 dizzy punch, "fighting" type 8, 8 physical power, 100 % success, the target has a 20 % chance of becoming +1 in confusion, and that during about 1 turns, (fighting, contact, hand, physical, offensive)
+piedVoltige 4 high jump kick, "fighting" type 9, 10 physical power, 100 % success, the target has a 100 % chance to put 2 card "flying" into his exile, (fighting, critical risk, contact, foot, physical, offensive, manipulation)
+clefDeBras 4 armlock, "fighting" type 10, 5 physical power, 100 % success, the target has a 30 % chance of becoming +1 in paralysis, and that during about 1 turns, the target has a 100 % chance to put 1 card "hand" into his exile, (fighting, contact, hand, physical, offensive, manipulation)
+clefDeJambe 4 legglock, "fighting" type 11, 6 physical power, 100 % success, the target has a 30 % chance of becoming +1 in paralysis, and that during about 1 turns, the target has a 100 % chance to put 1 card "foot" into his exile, (fighting, contact, hand, physical, offensive, manipulation)
+mitrapoing 4 focus punch, "fighting" type 15, 15 physical power, 100 % success, the launcher has a 100 % chance of becoming -2 in physical defense, and that during about 1 turns, (fighting, contact, hand, physical, offensive, stat)
+mitrakick 4 focus kick, "fighting" type 18, 20 physical power, 100 % success, the launcher has a 100 % chance of becoming -2 in physical defense, and that during about 1 turns, (fighting, contact, foot, physical, offensive, stat)
+exploforce 4 focus blast, "fighting" type 20, 20 magical power, 90 % success, the target has a 20 % chance of becoming -1 in special defense, and that during about 8 turns, (fighting, explosion, magical, offensive)
+airLouche 4 shady mind, "dark" type, requires the launcher to be "dark" type, 100 % success, The launcher's level in his current type increases by 1, (dark, type)
+automutilation 4 self-mutilation, "dark" type, works following the number of "dark" cards in the launcher's hand, never fails, takes 2 health points from its launcher, the launcher has a 5 % chance of becoming +1 in fear, and that during about 1 turns, The launcher gets 1 cards "bleeding" in his hand, (dark, blood, unmissable)
+rugissement 4 growl, "dark" type, 100 % success, the target has a 100 % chance of becoming -2 in physical attack, and that during about 2 turns, the target has a 10 % chance of becoming +1 in fear, and that during about 1 turns, (dark, mouth, sound, stat, offensive)
+morsure 4 bite, "dark" type, 3 physical power, 100 % success, (dark, mouth, fang, contact, physical, offensive)
+goutDuRisque 4 taste of risk, "dark" type, 100 % success, the launcher has a 100 % chance of becoming +1 in critical hit, +1 in critical failure, and that during about 4 turns, (dark, stat)
+contreDeloyal 4 disloyal ripost, "dark" type 1, works as a reaction against a "contact" card, 5 physical power, has a level 1 critical hit, never fails, The target gets 1 cards "bleeding" in his hand, (dark, contact, blood, reaction, physical, offensive, unmissable)
+feinte 4 feint attack, "dark" type 1, 4 physical power, has a level 1 critical hit, never fails, (dark, contact, physical, offensive, unmissable)
+intimidation 4 intimidate, "dark" type 1, 100 % success, the target has a 100 % chance of becoming -1 in physical attack, and that during about 8 turns, (dark, stat, offensive)
+crachat 4 spit, "dark" type 1, 100 % success, the target has a 100 % chance of becoming +2 in physical attack, -2 in physical defense, and that during about 2 turns, (dark, mouth, stat, offensive)
+coupBas 4 sucker punch, "dark" type 1, 4 physical power, has a level 3 critical hit, 100 % success, (dark, contact, physical, offensive)
+breuvageForce 4 forced beverage, "dark" type 1, works as a parry against a "mouth" card, works following the number of "elixir of poison" cards in the launcher's hand, 100 % success, in about 2 turns the target has a 100 % chance of becoming +2 in poison, and that during about 1 turns, the launcher has a 100 % chance to put 1 card "elixir of poison" into his exile, (dark, contact, parry, manipulation, status, offensive)
+larcinInapercu 4 unnoticed larceny, "dark" type 1, works as a reaction against a "manipulation" card, 100 % success, the launcher has a 100 % chance to take 2 card in the target's discard pile, (dark, double try, hand, reaction, manipulation, offensive)
+barriereDeSang 4 blood barrier, "dark" type 1, works as a parry against a "fairy" card, works following the number of "bleeding" cards in the launcher's hand, 2 magical power, 100 % success, the target has a 100 % chance of becoming +1 in fear, and that during about 1 turns, the target has a 100 % chance to take 1 card "bleeding" in the launcher's hand, (dark, parry, barrier, magical, offensive, status, manipulation)
+demence 4 madness, "dark" type 2, 100 % success, the launcher has a 100 % chance of becoming +4 in critical hit, +4 in critical failure, and that during about 4 turns, in about 2 turns the launcher has a 100 % chance of becoming +1 in confusion, and that during about 2 turns, (dark, stat, status)
+complot 4 plot, "dark" type 2, 80 % success, the launcher has a 100 % chance to take 1 card from his deck, the target has a 100 % chance to take 1 card from his deck, (dark, manipulation, offensive)
+occasionDuLarron 4 chance of the thief, "dark" type 2, works following the target's "sleep" status, 100 % success, the launcher has a 100 % chance to take 1 card in the target's deck, (dark, hand, manipulation, offensive)
+exacerbation 4 exacerbation, "dark" type 2, 100 % success, The launcher's level in his current type increases by 4, The target's level in his current type increases by 4, (dark, offensive, type)
+sadique 4 sadistic, "dark" type 3, 100 % success, The launcher takes the "sadistic" posture (+2 power on "multi-hit" launched attacks, +1 power on "blood" launched attacks, +1 power on "fairy" received attacks), (dark, posture)
+griffeSanglante 4 bloody scratch, "dark" type 3, 4 physical power, 100 % success, The target gets 1 cards "bleeding" in his hand, (dark, contact, hand, blood, physical, offensive)
+insomnie 4 insomnia, "dark" type 4, 100 % success, the launcher has a 100 % chance of becoming -2 in sleep, and that during about 8 turns, (dark, status)
+verrePartage 4 shared glass, "dark" type 5, 100 % success, in about 2 turns the launcher has a 50 % chance of becoming +1 in poison, and that during about 2 turns, in about 2 turns the target has a 50 % chance of becoming +1 in poison, and that during about 2 turns, the launcher has a 100 % chance to take 1 card in the target's hand, the target has a 100 % chance to take 1 card in the launcher's hand, (dark, offensive, manipulation)
+machouille 4 crunch, "dark" type 6, 8 physical power, 100 % success, the target has a 20 % chance of becoming -1 in physical defense, and that during about 4 turns, the target has a 20 % chance of becoming +1 in fear, and that during about 1 turns, (dark, mouth, fang, contact, physical, offensive)
+pickpocket 4 pickpocket, "dark" type 6, 100 % success, the launcher has a 100 % chance to take 2 card in the target's deck, (dark, hand, manipulation, offensive)
+elfeNoir 4 dark elf, "dark" type 6, 100 % success, The launcher takes the "dark elf" posture (+3 power on "dark" launched attacks, +2 power on "poison" launched attacks, +1 power on "magical" launched attacks, -2 power on "physical" launched attacks, +3 power on "physical" received attacks, +2 power on "sword" received attacks, +1 power on "fairy" received attacks, -1 power on "magical" received attacks), (dark, posture)
+hacheDeMeurtrier 4 murderous axe, "dark" type 6, 6 physical power, has a level 2 critical hit, 100 % success, the target has a 10 % chance of becoming +1 in poison, and that during about 1 turns, (dark, weapon, axe, physical, offensive)
+bousculade 4 rush, "dark" type 8, 4 physical power, 100 % success, the launcher has a 75 % chance to take 1 card in the target's deck, (dark, contact, physical, offensive)
+degommage 4 knock out, "dark" type 8, 5 physical power, 100 % success, the target has a 100 % chance to put 1 card into his discard pile, (dark, contact, physical, offensive, manipulation)
+clocheDeMinuit 4 midnight ring, "dark" type 8, 100 % success, the launcher has a 100 % chance of becoming +2 in physical attack, +2 in special attack, +2 in critical hit, and that during about 4 turns, the launcher has a 100 % chance of becoming -2 in confusion, -2 in fear, -2 in sleep, and that during about 4 turns, the launcher has a 100 % chance to take 1 card "dark" from his deck, (dark, sound, stat, status, manipulation)
+chapardage 4 rip-off, "dark" type 10, 100 % success, the launcher has a 100 % chance to take 1 card in the target's hand, (dark, hand, manipulation, offensive)
+retournementDAgressivite 4 reversed evilness, "dark" type 11, follows the number of "physical" cards in the target's hand, 100 % success, the target has a 100 % chance to put 1 card "physical" into his discard pile, The target gets 1 cards "self-mutilation" in his hand, (dark, manipulation, offensive)
+chocTerreur 4 shock from terror, "dark" type 12, works following the target's "fear" status, 10 magical power, has a level 1 critical hit, 100 % success, (dark, magical, offensive)
+nuitTenebreuse 4 dark night, "dark" type 12, 100 % success, Changes the environment to "dark night" (+5 power on "shock from terror" launched attacks, +3 power on "nightmare" launched attacks, +2 power on "dark" launched attacks, +1 power on "ghost" launched attacks, -4 power on "grass" launched attacks, -2 power on "fairy" launched attacks), (dark, environment)
+ecartePlaie 4 enlarge sore, "dark" type 14, follows the number of "bleeding" cards in the target's hand, 2 physical power, 100 % success, The target gets 1 cards "bleeding" in his hand, (dark, contact, blood, physical, offensive)
+resonanceDeSang 4 blood resonance, "dark" type 16, works following the number of "bleeding" cards in the launcher's hand, follows the number of "bleeding" cards in the target's hand, 1 magical power, the launcher suffers 50 % of the damages caused to the target, 100 % success, (dark, blood, magical, offensive)
+angoisseSanglante 4 bloody panic, "dark" type 18, follows the number of "bleeding" cards in the target's hand, 1 magical power, 100 % success, the target has a 100 % chance of becoming +1 in fear, and that during about 1 turns, (dark, blood, magical, offensive, status)
+envol 4 flight, "flying" type, requires the launcher to be "flying" type, 100 % success, The launcher's level in his current type increases by 1, (flying, type)
+picpic 4 peck, "flying" type, 3 physical power, 100 % success, (flying, contact, mouth, physical, offensive)
+dispersePoudre 4 dispatcher of powder, "flying" type, 100 % success, the target has a 100 % chance to put 1 card "powder" into his exile, (flying, wind, manipulation, offensive)
+volLibre 4 free trade, "flying" type, 100 % success, reduces the launcher's prohibition to choose his type by 4 turns, (flying)
+rebond 4 bounce, "flying" type, 100 % success, the launcher has a 100 % chance of becoming +1 in dodge, and that during about 4 turns, (flying, stat)
+climatologie 4 climatology, "flying" type, 100 % success, the launcher has a 100 % chance to take 1 card "environment" from his deck, (flying, manipulation)
+sauteBarriere 4 barrier dodging, "flying" type, works as a parry against a "barrier" card, 100 % success, (flying, parry)
+plumeImpermeable 4 impermeable feather, "flying" type, works as a parry against a "powder" card, 100 % success, (flying, parry)
+envolReflexe 4 reflex flight, "flying" type 1, works as a parry against a "ground" card, 100 % success, 100 % chance of changing the launcher's type into "flying", (flying, parry, type)
+portance 4 lift, "flying" type 1, works as a reaction against a "wind" card, requires the launcher to be "flying" type, 100 % success, adds 5 health points to the launcher, The launcher's level in his current type increases by 1, (flying, reaction, type)
+volFrenetique 4 frenetic flight, "flying" type 1, 100 % success, the launcher has a 100 % chance of becoming +2 in dodge, and that during about 4 turns, (flying, stat)
+defenseDuNid 4 nest defense, "flying" type 1, works as a parry against a "manipulation" card, requires the launcher to be "flying" type, 3 physical power, can hit up to 3 times, 100 % success, (flying, contact, mouth, parry, physical, offensive, multi-hit)
+coupDeVent 4 blowing wind, "flying" type 2, 5 magical power, 100 % success, (flying, wind, magical, offensive)
+volDuRapace 4 raptor flight, "flying" type 4, 100 % success, the launcher has a 100 % chance of becoming +2 in success, and that during about 8 turns, (flying, stat)
+aileTranchante 4 sharping wing, "flying" type 4, 8 physical power, has a level 1 critical hit, 100 % success, (flying, contact, physical, offensive)
+tornade 4 gust, "flying" type 6, 10 magical power, 100 % success, the target has a 10 % chance to put 1 card into his exile, (flying, wind, magical, offensive)
+ventContraire 4 tailwind, "flying" type 7, 100 % success, the target has a 100 % chance to put 2 card "wind" into his exile, (flying, wind, manipulation, offensive)
+pluieDePlume 4 feather dance, "flying" type 8, 100 % success, the launcher has a 100 % chance of becoming +1 in success, +1 in dodge, and that during about 4 turns, the target has a 100 % chance of becoming -1 in success, -1 in dodge, and that during about 4 turns, (flying, stat, offensive)
+erosionDesRoches 4 erosion of the rocks, "flying" type 9, 80 % success, the target has a 100 % chance to put 2 card "rock" into his exile, (flying, manipulation, offensive)
+becVrille 4 drill peck, "flying" type 10, 10 physical power, has a level 1 critical hit, 100 % success, (flying, contact, mouth, physical, offensive)
+cyclone 4 whirlwind, "flying" type 12, 15 magical power, 100 % success, the target has a 30 % chance to put 1 card into his exile, (flying, wind, magical, offensive)
+cartePique 4 sky attack, "flying" type 16, 15 physical power, has a level 2 critical hit, has a level 1 critical failiure, 100 % success, the target has a 20 % chance of becoming +1 in fear, and that during about 1 turns, (flying, contact, physical, offensive)
+piedDArgile 4 foot of clay, "ground" type, requires the launcher to be "ground" type, 100 % success, The launcher's level in his current type increases by 1, (ground, foot, type)
+jetDeSable 4 sand-attack, "ground" type, 90 % success, the target has a 100 % chance of becoming -1 in success, and that during about 4 turns, (ground, powder, stat, offensive)
+vibrationDuSol 4 ground vibration, "ground" type, 3 magical power, 100 % success, (ground, magical, offensive)
+prospection 4 prospecting, "ground" type, 100 % success, the launcher has a 100 % chance to take 1 card "stat" from his deck, (ground, manipulation)
+repriseDArme 4 weapon recovery, "ground" type 1, 100 % success, the launcher has a 100 % chance to take 2 card "weapon" from his discard pile, (ground, manipulation)
+minageEnergetique 4 energetic mining, "ground" type 2, 100 % success, in about 4 turns the launcher has a 100 % chance of becoming +3 in special attack, and that during about 8 turns, (ground, stat)
+creusement 4 dig out, "ground" type 4, 100 % success, the launcher has a 100 % chance to take 1 card "ground" from his deck, (ground, manipulation)
+ondeTellurique 4 telluric wave, "ground" type 4, 8 magical power, 100 % success, the target has a 10 % chance of becoming -1 in special defense, and that during about 8 turns, (ground, magical, offensive)
+terreauDeSang 4 blood loam, "ground" type 4, works following the number of "bleeding" cards in the launcher's hand, 100 % success, adds 4 health points to the launcher, the launcher has a 100 % chance to put 1 card "bleeding" into his exile, (ground, blood, manipulation)
+bainDeBoue 4 bath of mud, "ground" type 5, 100 % success, the launcher has a 100 % chance of becoming -1 in burning, -1 in freezing, -1 in poison, and that during about 4 turns, the launcher has a 100 % chance to put 1 card "bleeding" into his exile, (ground, status, manipulation)
+tempeteDeSable 4 sand storm, "ground" type 5, 100 % success, Changes the environment to "sand storm" (+2 power on "wind" launched attacks, -3 power on "fire" launched attacks, -2 power on "flying" launched attacks, -1 power on "grass" launched attacks), (ground, environment)
+jetDeBoue 4 mud-slap, "ground" type 6, 4 magical power, 90 % success, the target has a 100 % chance of becoming -2 in success, and that during about 4 turns, (ground, magical, offensive, stat)
+nain 4 dwarf, "ground" type 6, 100 % success, The launcher takes the "dwarf" posture (+10 power on "axe" launched attacks, +3 power on "shield" launched attacks, -5 power on "magical" launched attacks, +4 power on "grass" received attacks, -3 power on "ground" received attacks, -3 power on "rock" received attacks, -3 power on "steel" received attacks, -2 power on "magical" received attacks), (ground, posture)
+glissementDeTerrain 4 landslip, "ground" type 10, 10 physical power, 100 % success, (ground, physical, offensive)
+torrentDeBoue 4 muddy stream, "ground" type 12, 8 magical power, 100 % success, the target has a 100 % chance of becoming -2 in success, and that during about 8 turns, (ground, surge, magical, offensive, stat)
+seisme 4 earthquake, "ground" type 15, 15 physical power, 100 % success, (ground, physical, offensive)
+nageTellurique 4 telluric swim, "ground" type 18, 100 % success, the launcher has a 100 % chance of becoming +1 in success, +3 in dodge, and that during about 8 turns, (ground, stat)
+explosionDeBoue 4 muddy explosion, "ground" type 22, 16 magical power, 100 % success, the target has a 100 % chance of becoming -2 in success, and that during about 8 turns, (ground, explosion, magical, offensive, stat)
+enrochement 4 rip-rap, "rock" type, requires the launcher to be "rock" type, 100 % success, The launcher's level in his current type increases by 1, (rock, type)
+eclatPrecieux 4 precious splinter, "rock" type, 3 physical power, 100 % success, (rock, physical, offensive)
+stabilite 4 stability, "rock" type, 100 % success, The launcher's type cannot be changed during 4 turns, (rock)
+renforcementPreventif 4 preventive trussing, "rock" type, works following the number of "parry" cards in the launcher's hand, 100 % success, the launcher has a 100 % chance to take 1 card "parry" from his deck, (rock, manipulation)
+insensibiliteMinerale 4 mineral insensitivity, "rock" type 1, works as a parry against a "status" card, 100 % success, (rock, parry)
+barriereDeRoche 4 rock barrier, "rock" type 1, works as a parry against a "tackle" card, 15 physical power, 100 % success, (rock, parry, barrier, physical, offensive)
+nuageDePoussiere 4 drop of dust, "rock" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in dodge, and that during about 8 turns, (rock, stat)
+jetDePierre 4 rock throw, "rock" type 1, 5 physical power, 90 % success, (rock, physical, offensive)
+miroirDAbsorption 4 absorption mirror, "rock" type 1, works as a parry against a "absorption" card, 8 magical power, the launcher absorbs 100 % of the damages caused to the target, 100 % success, (rock, mirror, parry, magical, offensive, absorption)
+chuteDePierre 4 big rock throw, "rock" type 3, 10 physical power, 85 % success, (rock, physical, offensive)
+regardPetrifiant 4 petrificus, "rock" type 4, 100 % success, the target has a 100 % chance of becoming +1 in paralysis, and that during about 4 turns, (rock, status, offensive)
+coeurDePierre 4 heart stone, "rock" type 4, 100 % success, the launcher has a 100 % chance of becoming -2 in confusion, and that during about 8 turns, (rock, status)
+muraille 4 rock wall, "rock" type 5, 100 % success, the launcher has a 100 % chance of becoming +4 in physical defense, -2 in success, and that during about 8 turns, (rock, stat)
+ruineAntique 4 ancient ruin, "rock" type 5, 100 % success, Changes the environment to "ancient ruin" (+5 power on "ancient power" launched attacks, +1 power on "ghost" launched attacks), (rock, environment)
+zoneAntimagique 4 antimagic zone, "rock" type 5, 100 % success, Changes the environment to "antimagic zone" (-4 power on "magical" launched attacks), (rock, environment)
+rayonGemme 4 power gem, "rock" type 6, 10 magical power, 80 % success, 20 % chance of changing the target's type into "rock", (rock, ray, magical, offensive)
+hacheDeDiamant 4 diamont-tipped axe, "rock" type 6, 6 physical power, has a level 2 critical hit, 100 % success, the target has a 10 % chance of becoming +1 in fear, and that during about 1 turns, (rock, weapon, axe, physical, offensive)
+eboulement 4 rock slide, "rock" type 8, 15 physical power, 90 % success, the target has a 20 % chance of becoming +1 in fear, and that during about 1 turns, (rock, physical, offensive)
+ecrasementDeColosse 4 colossal crushing, "rock" type 10, works following the number of "foot" cards in the launcher's hand, 8 physical power, 100 % success, (rock, foot, physical, offensive)
+pouvoirAntique 4 ancient power, "rock" type 12, 12 magical power, 100 % success, the launcher has a 10 % chance of becoming +1 in physical attack, +1 in physical defense, +1 in special attack, +1 in special defense, and that during about 8 turns, (rock, magical, offensive)
+graveDansLeMarbre 4 marble zone, "rock" type 15, 100 % success, The launcher's type cannot be changed during 8 turns, The target's type cannot be changed during 8 turns, (rock, offensive)
+jetDeMassif 4 massif thrower, "rock" type 18, 30 physical power, 60 % success, the target has a 80 % chance of becoming +1 in fear, and that during about 1 turns, (rock, physical, offensive)
+forteresse 4 fortress, "rock" type 22, 100 % success, the launcher has a 100 % chance of becoming +8 in physical defense, -4 in success, and that during about 8 turns, (rock, stat)
+electrification 4 electrification, "electric" type, requires the launcher to be "electric" type, 100 % success, The launcher's level in his current type increases by 1, (electric, type)
+frottementElectrostatique 4 nuzzle, "electric" type, 3 physical power, 100 % success, (electric, contact, physical, offensive)
+electronLibre 4 free electron, "electric" type, 100 % success, reduces the launcher's prohibition to choose his type by 4 turns, reduces the launcher's prohibition to choose his type by 4 turns, (electric)
+flashElectrique 4 electric flash, "electric" type, 100 % success, the launcher has a 50 % chance of becoming +1 in success, and that during about 4 turns, the launcher has a 50 % chance of becoming -1 in confusion, and that during about 1 turns, the target has a 50 % chance of becoming -1 in success, and that during about 4 turns, the target has a 50 % chance of becoming +1 in fear, and that during about 1 turns, (electric, offensive)
+poudreTracante 4 tracking powder, "electric" type, 100 % success, the target has a 100 % chance of becoming -4 in dodge, and that during about 1 turns, (electric, powder, stat, offensive)
+aerogeneration 4 wind turbine, "electric" type 1, works as a reaction against a "wind" card, 100 % success, the launcher has a 100 % chance of becoming +1 in special attack, and that during about 4 turns, (electric, reaction, stat)
+energisation 4 energization, "electric" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in special attack, and that during about 8 turns, (electric, stat)
+electrochocMineur 4 little electroshock treatement, "electric" type 1, 4 magical power, 100 % success, the target has a 10 % chance of becoming +1 in paralysis, and that during about 1 turns, (electric, magical, offensive)
+barriereMagnetique 4 magnetic barrier, "electric" type 1, works as a parry against a "steel" card, 100 % success, the launcher has a 100 % chance to take 1 card "steel" in the target's hand, 1 card "steel" in the target's deck, 1 card "steel" in the target's discard pile, 1 card "steel" in the target's exile, (electric, parry, barrier, manipulation, offensive)
+tetanisation 4 tetanization, "electric" type 2, 100 % success, the target has a 100 % chance of becoming +1 in paralysis, and that during about 1 turns, (electric, status, offensive)
+electrochocMajeur 4 big electroshock treatement, "electric" type 5, 8 magical power, 100 % success, the target has a 15 % chance of becoming +1 in paralysis, and that during about 1 turns, (electric, magical, offensive)
+poingEclair 4 thunderpunch, "electric" type 5, 8 physical power, 100 % success, the target has a 10 % chance of becoming +1 in paralysis, and that during about 1 turns, (electric, contact, hand, physical, offensive)
+protectionElectrostatique 4 electric shelter, "electric" type 5, 100 % success, The launcher's type cannot be changed during 8 turns, (electric)
+cageEclair 4 thunder wave, "electric" type 6, 100 % success, the target has a 100 % chance of becoming +2 in paralysis, and that during about 4 turns, (electric, status, offensive)
+mobiliteElectrique 4 electric mobility, "electric" type 6, 100 % success, the launcher has a 100 % chance of becoming -2 in paralysis, and that during about 8 turns, (electric, status)
+hacheDeFoudre 4 lightning axe, "electric" type 6, 6 physical power, has a level 2 critical hit, 100 % success, the target has a 10 % chance of becoming +1 in paralysis, and that during about 1 turns, (electric, weapon, axe, physical, offensive)
+crocEclair 4 thunder fang, "electric" type 8, 6 physical power, 100 % success, the target has a 20 % chance of becoming +1 in paralysis, and that during about 2 turns, (electric, mouth, fang, contact, physical, offensive)
+chargeElectrifiee 4 volt tackle, "electric" type 10, 20 physical power, the launcher suffers 30 % of the damages caused to the target, 80 % success, (electric, tackle, contact, physical, offensive)
+tonnerre 4 thunderbolt, "electric" type 12, 12 magical power, 100 % success, the target has a 15 % chance of becoming +1 in paralysis, and that during about 2 turns, (electric, magical, offensive)
+verrouElectrostatique 4 electric lock, "electric" type 15, 100 % success, The target's type cannot be changed during 8 turns, (electric, offensive)
+electrificationDeMain 4 hand electrification, "electric" type 15, follows the number of " " cards in the target's hand, 2 magical power, 100 % success, (electric, magical, offensive)
+fataleFoudre 4 thunder, "electric" type 18, 20 magical power, 75 % success, the target has a 25 % chance of becoming +1 in paralysis, and that during about 2 turns, (electric, magical, offensive)
+hydrolisation 4 hydrology, "water" type, requires the launcher to be "water" type, 100 % success, The launcher's level in his current type increases by 1, (water, type)
+moiteur 4 damp, "water" type, 100 % success, the target has a 100 % chance to put 1 card "explosion" into his exile, (water, manipulation, offensive)
+bombeAEau 4 water bomb, "water" type, 3 physical power, 90 % success, (water, physical, offensive)
+elixirDeVitalite 4 elixir of energy, "water" type, has a level 1 critical failiure, 100 % success, adds 8 health points to the launcher, (water, elixir)
+surfAcrobatique 4 acrobatic surfing, "water" type, works as a parry against a "surge" card, 12 physical power, 90 % success, (water, parry, critical risk, physical, offensive)
+barriereDEau 4 water barrier, "water" type 1, works as a parry against a "fire" card, 100 % success, the target has a 100 % chance to put 5 card "fire" into his exile, (water, parry, barrier, manipulation, offensive)
+hydratation 4 hydration, "water" type 1, 100 % success, adds 5 health points to the launcher, the launcher has a 100 % chance of becoming -1 in burning, and that during about 8 turns, (water, status)
+eauPurifiante 4 purifying water, "water" type 1, 100 % success, the launcher has a 100 % chance of becoming -1 in burning, -1 in poison, and that during about 8 turns, the launcher has a 100 % chance to put 2 card "bleeding" into his exile, (water, status, manipulation)
+ecume 4 bubble, "water" type 1, 3 magical power, 100 % success, the target has a 20 % chance of becoming -1 in success, and that during about 4 turns, (water, magical, offensive)
+purificationDElixir 4 purging elixir, "water" type 1, works following the number of "elixir of poison" cards in the launcher's hand, 100 % success, the launcher has a 100 % chance to put 1 card "elixir of poison" into his exile, The launcher gets 1 cards "elixir of energy" in his hand, (water, manipulation)
+selDeMer 4 sea salt, "water" type 1, follows the number of "bleeding" cards in the target's hand, 2 physical power, 100 % success, (water, powder, physical, offensive)
+miroirDEau 4 water mirror, "water" type 1, works as a parry against a "ray" card, 8 magical power, 100 % success, (water, mirror, ray, parry, magical, offensive)
+chantDuDauphin 4 dolphin's song, "water" type 1, 2 magical power, 100 % success, the launcher has a 100 % chance to take 1 card "water" in the target's deck, (water, sound, magical, offensive, manipulation)
+antigel 4 ice heal, "water" type 2, 100 % success, the launcher has a 100 % chance of becoming -1 in freezing, and that during about 8 turns, (water, status)
+bulleDEau 4 bubble beam, "water" type 3, 5 magical power, 100 % success, the target has a 10 % chance of becoming -1 in success, and that during about 2 turns, (water, magical, offensive)
+vibraqua 4 water pulse, "water" type 4, 6 magical power, 100 % success, the target has a 20 % chance of becoming +1 in confusion, and that during about 1 turns, (water, magical, offensive)
+chargeDuThon 4 tuna's pulse, "water" type 5, 15 physical power, the launcher suffers 30 % of the damages caused to the target, 80 % success, (water, tackle, contact, physical, offensive)
+pluie 4 rain, "water" type 5, 100 % success, Changes the environment to "rain" (+3 power on "water" launched attacks, +2 power on "electric" launched attacks, +1 power on "grass" launched attacks, -3 power on "fire" launched attacks), (water, environment)
+saumure 4 brine, "water" type 6, 5 magical power, 100 % success, the target has a 100 % chance to put 1 card "ice" into his exile, (water, magical, offensive, manipulation)
+hacheDeCorail 4 coral axe, "water" type 6, 6 physical power, has a level 2 critical hit, 100 % success, the launcher has a 10 % chance of becoming +1 in special defense, and that during about 4 turns, (water, weapon, axe, physical, offensive)
+filetDePeche 4 net, "water" type 8, 100 % success, the target has a 100 % chance of becoming +2 in critical failure, and that during about 4 turns, (water, stat, offensive)
+chantDeLaBaleine 4 whale's song, "water" type 8, 5 magical power, 100 % success, the launcher has a 100 % chance to take 2 card "water" in the target's deck, (water, sound, magical, offensive, manipulation)
+ebullition 4 boiling, "water" type 9, works following the launcher's "burning" status, 7 magical power, 100 % success, the target has a 80 % chance of becoming +1 in burning, and that during about 2 turns, (water, magical, offensive)
+erosionDesSols 4 erosion of the floors, "water" type 9, 80 % success, the target has a 100 % chance to put 2 card "ground" into his exile, (water, manipulation, offensive)
+rayonSonar 4 sonar ray, "water" type 12, 10 magical power, never fails, the target has a 30 % chance of becoming +2 in confusion, and that during about 1 turns, the target shows 4 cards from his hand, (water, ray, sound, magical, offensive, unmissable)
+crocRequin 4 fang of shark, "water" type 12, 12 physical power, has a level 1 critical hit, 100 % success, the target has a 50 % chance of becoming +1 in fear, and that during about 1 turns, (water, mouth, fang, contact, physical, offensive)
+vagueScelerate 4 wicked wave, "water" type 14, 15 magical power, 100 % success, (water, surge, magical, offensive)
+allumage 4 lighting, "fire" type, requires the launcher to be "fire" type, 100 % success, The launcher's level in his current type increases by 1, (fire, type)
+elixirDePuissance 4 elixir of power, "fire" type, has a level 1 critical failiure, 100 % success, the launcher has a 100 % chance of becoming +1 in special attack, and that during about 4 turns, (fire, elixir, stat)
+poudreBrulante 4 burning powder, "fire" type, 80 % success, the target has a 100 % chance of becoming +1 in burning, and that during about 1 turns, (fire, powder, status, offensive)
+flammeche 4 ember, "fire" type, 3 magical power, 100 % success, (fire, magical, offensive)
+contactBrulant 4 searing contact, "fire" type, works as a reaction against a "contact" card, requires the launcher to be "fire" type, 100 % success, the target has a 100 % chance of becoming +1 in burning, and that during about 2 turns, (fire, contact, reaction, status, offensive)
+mainAuFeu 4 hand in the fire, "fire" type, works following the number of " " cards in the launcher's hand, 100 % success, the launcher has a 100 % chance to put 1 card into his exile, (fire, double try, manipulation)
+cocktailMolotov 4 molotov cocktail, "fire" type 1, 5 physical power, 80 % success, the target has a 5 % chance of becoming +1 in burning, and that during about 1 turns, (fire, physical, offensive)
+evaporation 4 evaporation, "fire" type 1, works as a parry against a "water" card, 100 % success, (fire, parry)
+surchauffe 4 overheat, "fire" type 2, 100 % success, the launcher has a 100 % chance of becoming +3 in special attack, and that during about 2 turns, in about 2 turns the launcher has a 100 % chance of becoming +2 in burning, -2 in freezing, and that during about 2 turns, (fire, critical risk, stat, status)
+epeeDeMagma 4 swordfire, "fire" type 3, 5 physical power, has a level 1 critical hit, 100 % success, the target has a 5 % chance of becoming +1 in burning, and that during about 1 turns, (fire, weapon, sword, physical, offensive)
+poingDeFeu 4 fire punch, "fire" type 4, 8 physical power, 100 % success, the target has a 10 % chance of becoming +1 in burning, and that during about 1 turns, (fire, contact, hand, physical, offensive)
+rayonEvaporateur 4 evaporator ray, "fire" type 4, follows the number of "water" cards in the target's hand, 4 magical power, 100 % success, the target has a 100 % chance to put 1 card "water" into his exile, (fire, ray, magical, offensive, manipulation)
+ventBrulant 4 burning wind, "fire" type 5, 90 % success, the target has a 100 % chance of becoming +1 in burning, and that during about 4 turns, (fire, wind, status, offensive)
+chaleurEtouffante 4 oppressive heat, "fire" type 5, 100 % success, Changes the environment to "oppressive heat" (+3 power on "fire" launched attacks, -3 power on "ice" launched attacks, -2 power on "water" launched attacks, -1 power on "grass" launched attacks), (fire, environment)
+crocFeu 4 fire fang, "fire" type 7, 6 physical power, 100 % success, the target has a 20 % chance of becoming +1 in burning, and that during about 2 turns, (fire, mouth, fang, contact, physical, offensive)
+puissanceBrulante 4 burning power, "fire" type 8, works following the launcher's "burning" status, 100 % success, the launcher has a 100 % chance of becoming +2 in special attack, +2 in special defense, and that during about 8 turns, (fire, stat)
+attiseFlamme 4 stirring up, "fire" type 9, works following the target's "burning" status, 5 magical power, 100 % success, the target has a 100 % chance of becoming +1 in burning, and that during about 4 turns, (fire, magical, offensive, status)
+lanceFlamme 4 flamethrower, "fire" type 10, 15 magical power, 100 % success, the target has a 15 % chance of becoming +1 in burning, and that during about 2 turns, (fire, magical, offensive)
+rouladeEnflammee 4 inflamed roll, "fire" type 12, 10 physical power, 80 % success, the launcher has a 100 % chance of becoming +1 in dodge, and that during about 8 turns, the target has a 20 % chance of becoming +1 in burning, and that during about 1 turns, (fire, contact, physical, offensive, stat)
+deflagration 4 fire blast, "fire" type 18, 20 magical power, has a level 1 critical failiure, 100 % success, the target has a 25 % chance of becoming +1 in burning, and that during about 2 turns, (fire, explosion, magical, offensive)
+etudeChimique 4 chimical study, "poison" type, requires the launcher to be "poison" type, 100 % success, The launcher's level in his current type increases by 1, (poison, type)
+elixirDePoison 4 elixir of poison, "poison" type, has a level 1 critical failiure, 100 % success, in about 2 turns the launcher has a 100 % chance of becoming +2 in poison, and that during about 1 turns, (poison, elixir, status)
+gazPutride 4 putrid gas, "poison" type, 3 magical power, 100 % success, (poison, magical, offensive)
+antidote 4 antidote, "poison" type, 100 % success, the launcher has a 100 % chance of becoming -1 in poison, and that during about 8 turns, (poison, status)
+poudreToxique 4 poison powder, "poison" type, 80 % success, the target has a 100 % chance of becoming +1 in poison, and that during about 1 turns, (poison, powder, status, offensive)
+recherche 4 search, "poison" type, 100 % success, the launcher has a 100 % chance to take 1 card "status" from his deck, (poison, manipulation)
+reactivite 4 reactivity, "poison" type, 100 % success, the launcher has a 100 % chance to take 1 card "reaction" from his deck, (poison, manipulation)
+contactToxique 4 toxic contact, "poison" type, works as a reaction against a "contact" card, requires the launcher to be "poison" type, 100 % success, the target has a 100 % chance of becoming +1 in poison, and that during about 2 turns, (poison, contact, reaction, status, offensive)
+fabricationDElixir 4 manufacture of elixir, "poison" type 1, works following the number of "powder" cards in the launcher's hand, 100 % success, The launcher gets 1 cards "elixir of poison" in his hand, (poison)
+mithridatisation 4 mithridatisme, "poison" type 1, 100 % success, in about 4 turns the launcher has a 100 % chance of becoming -2 in poison, and that during about 8 turns, (poison, status)
+transfusion 4 transfusion, "poison" type 1, works following the launcher's "poison" status, 90 % success, the target has a 100 % chance of becoming +2 in poison, and that during about 4 turns, (poison, blood, status, offensive)
+piqueEmpoisonnee 4 poisoned pike, "poison" type 1, 3 physical power, 100 % success, the target has a 50 % chance of becoming +1 in poison, and that during about 2 turns, (poison, weapon, physical, offensive)
+facteurDeCoagulation 4 coagulation factor, "poison" type 1, works following the number of "bleeding" cards in the launcher's hand, 100 % success, adds 1 health points to the launcher, the launcher has a 100 % chance to put 1 card "bleeding" into his exile, (poison, blood, manipulation)
+bouclierCorrosif 4 corrosive shield, "poison" type 1, works as a parry against a "rock" card, 5 physical power, 100 % success, the target has a 50 % chance of becoming -1 in physical defense, and that during about 2 turns, (poison, weapon, shield, parry, physical, offensive)
+coassement 4 frog croak, "poison" type 1, 2 magical power, 100 % success, the launcher has a 100 % chance to take 1 card "poison" in the target's deck, (poison, sound, magical, offensive, manipulation)
+vomissement 4 vomiting, "poison" type 1, follows the number of "mouth" cards in the launcher's discard pile, 2 magical power, 90 % success, the target has a 10 % chance of becoming -1 in physical defense, and that during about 1 turns, (poison, mouth, magical, offensive)
+jetDAcide 4 acid thrower, "poison" type 2, 4 magical power, 100 % success, the target has a 20 % chance of becoming -1 in physical defense, and that during about 12 turns, (poison, magical, offensive)
+empoisonnement 4 poisoning, "poison" type 3, 90 % success, the target has a 100 % chance of becoming +1 in poison, and that during about 4 turns, (poison, status, offensive)
+alchimiste 4 alchemist, "poison" type 4, 100 % success, The launcher takes the "alchemist" posture (+3 power on "explosion" launched attacks, +2 power on "poison" launched attacks, +1 power on "fire" launched attacks, +2 power on "physical" received attacks), (poison, posture)
+livraisonDElixir 4 elixir delivery, "poison" type 4, works following the number of "elixir of poison" cards in the launcher's hand, 100 % success, the target has a 100 % chance to take 1 card "elixir of poison" in the launcher's hand, (poison, manipulation, offensive)
+bombeAcide 4 acid bomb, "poison" type 5, 7 magical power, 100 % success, the target has a 50 % chance of becoming -2 in physical defense, and that during about 12 turns, (poison, explosion, magical, offensive)
+cadeauEmpoisonne 4 poisoned gift, "poison" type 6, 90 % success, adds 20 health points to the target, the target has a 100 % chance of becoming +1 in poison, and that during about 12 turns, (poison, status, offensive)
+dissolution 4 dissolving, "poison" type 8, 100 % success, the target has a 100 % chance of becoming -1 in physical defense, and that during about 8 turns, the target has a 100 % chance to put 2 card "powder" into his exile, (poison, stat, offensive, manipulation)
+infection 4 stench, "poison" type 9, 90 % success, in about 4 turns the target has a 100 % chance of becoming +2 in poison, and that during about 8 turns, (poison, status, offensive)
+insecticide 4 insecticide, "poison" type 10, 100 % success, the target has a 100 % chance to put 2 card "bug" into his exile, (poison, manipulation, offensive)
+chocPoison 4 shock poison, "poison" type 12, works following the target's "poison" status, 5 magical power, 100 % success, (poison, magical, offensive)
+explosionDElixir 4 elixir explosion, "poison" type 14, follows the number of "elixir" cards in the target's hand, 5 magical power, 100 % success, the target has a 75 % chance of becoming +1 in fear, and that during about 1 turns, the target has a 100 % chance to put 1 card "elixir" into his exile, (poison, explosion, magical, offensive, manipulation)
+vagueDePus 4 pus surge, "poison" type 16, follows the number of "bleeding" cards in the launcher's discard pile, 4 magical power, 100 % success, in about 2 turns the target has a 100 % chance of becoming +1 in poison, and that during about 1 turns, (poison, blood, surge, magical, offensive, status)
+insectisation 4 insectarium, "bug" type, requires the launcher to be "bug" type, 100 % success, The launcher's level in his current type increases by 1, (bug, type)
+taillade 4 fury cutter, "bug" type, 3 physical power, 100 % success, (bug, contact, physical, offensive)
+secretion 4 string shot, "bug" type, 100 % success, the target has a 100 % chance of becoming -1 in success, and that during about 4 turns, (bug, stat, offensive)
+traitDeMiel 4 honey treatement, "bug" type, 100 % success, adds 5 health points to the launcher, the launcher has a 100 % chance of becoming -1 in poison, and that during about 4 turns, (bug, status)
+armureDeChitine 4 armour of chitin, "bug" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in physical defense, +1 in special defense, and that during about 8 turns, (bug, stat)
+vampirisme 4 leech life, "bug" type 1, 4 physical power, the launcher absorbs 50 % of the damages caused to the target, 100 % success, the target has a 5 % chance of becoming +1 in poison, and that during about 1 turns, (bug, mouth, contact, physical, offensive, absorption)
+piqureProfonde 4 poison sting, "bug" type 1, 5 physical power, has a level 1 critical hit, 100 % success, the target has a 30 % chance of becoming +1 in poison, and that during about 1 turns, (bug, contact, physical, offensive)
+pisteOlfactive 4 olfactory track, "bug" type 1, 100 % success, the launcher has a 100 % chance of becoming -2 in dodge, and that during about 4 turns, the target has a 100 % chance of becoming -2 in dodge, and that during about 4 turns, (bug, stat, offensive)
+bouclierDeSoie 4 silk shield, "bug" type 1, works as a parry against a "flying" card, 5 physical power, 100 % success, the target has a 50 % chance of becoming -1 in success, and that during about 2 turns, (bug, weapon, shield, parry, physical, offensive)
+barriereDeMiel 4 honey barrier, "bug" type 1, works as a parry against a "mouth" card, 100 % success, adds 10 health points to the target, the target has a 100 % chance of becoming -4 in success, -4 in dodge, and that during about 4 turns, (bug, parry, barrier, offensive, stat)
+stridulation 4 stridulation, "bug" type 1, 2 magical power, 100 % success, the launcher has a 100 % chance to take 1 card "bug" in the target's deck, (bug, sound, magical, offensive, manipulation)
+bourdon 4 buzz, "bug" type 2, 4 magical power, 90 % success, the launcher has a 20 % chance of becoming +1 in special attack, and that during about 2 turns, (bug, sound, magical, offensive)
+repasDeSang 4 bloody meal, "bug" type 3, follows the number of "bleeding" cards in the target's hand, 3 physical power, the launcher absorbs 100 % of the damages caused to the target, 100 % success, the target has a 10 % chance of becoming +1 in poison, and that during about 1 turns, (bug, mouth, contact, blood, physical, offensive, absorption)
+cocon 4 cocoon, "bug" type 3, 100 % success, the launcher has a 100 % chance of becoming +8 in physical defense, +8 in special defense, and that during about 4 turns, the launcher has a 100 % chance of becoming +8 in sleep, and that during about 4 turns, (bug, stat, status)
+geleeRoyale 4 royale gelly, "bug" type 5, 100 % success, adds 15 health points to the launcher, the launcher has a 100 % chance of becoming -1 in poison, and that during about 8 turns, (bug, status)
+appelALaColonie 4 calling to colony, "bug" type 5, 70 % success, the launcher has a 100 % chance to take 2 card "bug" from his deck, (bug, manipulation)
+toileGluante 4 sticky web, "bug" type 6, 100 % success, the target has a 100 % chance of becoming -2 in success, and that during about 4 turns, (bug, stat, offensive)
+nueeDeDard 4 pin missile, "bug" type 6, 3 physical power, can hit up to 6 times, 100 % success, the target has a 10 % chance of becoming +1 in poison, and that during about 2 turns, (bug, contact, physical, offensive, multi-hit)
+pheromoneDeSurvie 4 survival pheromone, "bug" type 6, 70 % success, the launcher has a 100 % chance to take 2 card "bug" from his discard pile, (bug, manipulation)
+concertDeBourdon 4 concert of bumblebea, "bug" type 7, 4 magical power, can hit up to 6 times, 75 % success, the launcher has a 20 % chance of becoming +1 in special attack, and that during about 4 turns, the target has a 10 % chance of becoming +1 in fear, and that during about 1 turns, (bug, sound, magical, offensive, multi-hit)
+poudreDePapillon 4 butterfly powder, "bug" type 8, 90 % success, the launcher has a 100 % chance of becoming +1 in special defense, +2 in dodge, and that during about 8 turns, (bug, powder, stat)
+injectionDePollen 4 injection of pollen, "bug" type 10, 75 % success, 100 % chance of changing the target's type into "grass", (bug, contact, offensive, type)
+butinage 4 foraging, "bug" type 14, 75 % success, the launcher has a 100 % chance to take 1 card in the target's deck, 1 card in the target's discard pile, 1 card in the target's exile, (bug, mouth, manipulation, offensive)
+feerie 4 enchantment, "fairy" type, requires the launcher to be "fairy" type, 100 % success, The launcher's level in his current type increases by 1, (fairy, type)
+rireNiais 4 giggle, "fairy" type, 100 % success, the target has a 100 % chance of becoming +1 in confusion, and that during about 1 turns, (fairy, mouth, sound, status, offensive)
+chatouille 4 tickle, "fairy" type, 100 % success, the target has a 100 % chance of becoming -1 in physical attack, -1 in physical defense, and that during about 4 turns, (fairy, contact, hand, stat, offensive)
+confidence 4 confide, "fairy" type, 100 % success, the target has a 100 % chance of becoming -1 in special attack, -1 in special defense, and that during about 4 turns, (fairy, mouth, stat, offensive)
+elixirDeCourage 4 elixir of bravery, "fairy" type, has a level 1 critical failiure, 100 % success, the launcher has a 100 % chance of becoming -1 in fear, and that during about 4 turns, (fairy, elixir, status)
+compensationJuste 4 fair compensation, "fairy" type, works as a reaction against a "physical" card, 100 % success, the launcher has a 100 % chance to take 1 card from his deck, The target gets 1 cards "fair compensation" in his hand, (fairy, reaction, manipulation, offensive)
+compensationHonorable 4 honorable compensation, "fairy" type, works as a reaction against a "type" card, follows the number of " " cards in the target's hand, 100 % success, the launcher has a 100 % chance to put 1 card into his discard pile, the target has a 100 % chance to take 1 card from his deck, the launcher has a 100 % chance to take 1 card in the target's hand, (fairy, reaction, manipulation, offensive)
+vanite 4 vanity, "fairy" type, 100 % success, the launcher has a 100 % chance to take 1 card "mirror" from his deck, (fairy, manipulation)
+auraFeerique 4 fairy aura, "fairy" type 1, 100 % success, the launcher has a 100 % chance of becoming -2 in curse, and that during about 8 turns, (fairy, status)
+sonophilie 4 audio power, "fairy" type 1, 100 % success, the launcher has a 100 % chance to take 1 card "sound" from his deck, (fairy, manipulation)
+charme 4 charm, "fairy" type 1, 100 % success, the target has a 100 % chance of becoming -2 in physical attack, and that during about 4 turns, (fairy, stat, offensive)
+grosCalin 4 play rough, "fairy" type 1, 4 physical power, 100 % success, the target has a 30 % chance of becoming +1 in confusion, and that during about 1 turns, (fairy, contact, physical, offensive)
+botteDeSeptLieues 4 seven-league boot, "fairy" type 1, requires the launcher to be "fairy" type, 100 % success, the launcher has a 100 % chance of becoming -2 in success, +2 in critical failure, and that during about 8 turns, The launcher's level in his current type increases by 7, The launcher can't change his type during 14 turns, (fairy, foot, type, stat)
+sangNoble 4 blue blood, "fairy" type 1, works following the number of "bleeding" cards in the launcher's hand, 100 % success, the launcher has a 100 % chance of becoming +1 in physical attack, and that during about 1 turns, the launcher has a 100 % chance of becoming -1 in fear, and that during about 4 turns, (fairy, blood, stat, status)
+miroirDeVerite 4 truth mirror, "fairy" type 1, works as a parry against a "dark" card, follows the number of "dark" cards in the target's hand, 2 magical power, 100 % success, (fairy, mirror, parry, magical, offensive)
+siffletDuFairPlay 4 fair play whistle, "fairy" type 1, works as a parry against a "multi-hit" card, 60 % success, the target has a 100 % chance to put 1 card "multi-hit" into his exile, (fairy, parry, double try, sound, manipulation, offensive)
+bouclierMagique 4 magical shield, "fairy" type 1, works as a parry against a "ghost" card, 6 magical power, 100 % success, the target has a 50 % chance of becoming -1 in special defense, and that during about 2 turns, (fairy, weapon, shield, parry, magical, offensive)
+armureMagique 4 magic armor, "fairy" type 2, 100 % success, the launcher has a 100 % chance of becoming +2 in special defense, and that during about 8 turns, (fairy, stat)
+audiotherapie 4 audio therapy, "fairy" type 2, works following the number of "sound" cards in the launcher's hand, 100 % success, adds 3 health points to the launcher, (fairy, sound)
+douxBaiser 4 sweet kiss, "fairy" type 3, 100 % success, the target has a 100 % chance of becoming +1 in confusion, and that during about 4 turns, (fairy, mouth, contact, status, offensive)
+epeeChevaleresque 4 magic sword, "fairy" type 3, 5 physical power, has a level 1 critical hit, 100 % success, the launcher has a 5 % chance of becoming +1 in physical attack, and that during about 4 turns, (fairy, weapon, sword, physical, offensive)
+pacteDePaix 4 peace treaty, "fairy" type 3, 80 % success, the launcher has a 100 % chance to put 10 card "offensive" into his discard pile, the target has a 100 % chance to put 10 card "offensive" into his discard pile, The launcher can't draw during 2 turns, The target can't draw during 2 turns, (fairy, manipulation, offensive)
+basLesPattes 4 hands off, "fairy" type 4, 80 % success, the target has a 100 % chance to put 2 card "hand" into his exile, (fairy, manipulation, offensive)
+protectionEnvironnementale 4 environmental shelter, "fairy" type 4, 90 % success, the target has a 100 % chance to put 2 card "environment" into his exile, (fairy, manipulation, offensive)
+adoucissement 4 softening, "fairy" type 4, 100 % success, the target has a 100 % chance to put 1 card "offensive" into his discard pile, (fairy, manipulation, offensive)
+ventFeerique 4 fairy wind, "fairy" type 4, 5 magical power, 100 % success, (fairy, wind, magical, offensive)
+poudrier 4 powdering, "fairy" type 5, 100 % success, the launcher has a 100 % chance to take 2 card "powder" from his deck, (fairy, manipulation)
+vampibaiser 4 draining kiss, "fairy" type 6, 5 magical power, the launcher absorbs 75 % of the damages caused to the target, 100 % success, the target has a 50 % chance of becoming -1 in physical attack, -1 in special attack, and that during about 3 turns, the target has a 50 % chance of becoming +1 in confusion, and that during about 3 turns, (fairy, mouth, contact, magical, offensive, absorption)
+eclatMagique 4 dazzling gleam, "fairy" type 8, 8 magical power, 100 % success, the target has a 50 % chance of becoming -2 in success, and that during about 2 turns, (fairy, magical, offensive)
+reveTroublant 4 disquieting dream, "fairy" type 10, works following the target's "sleep" status, 100 % success, the target has a 100 % chance of becoming +1 in confusion, and that during about 4 turns, (fairy, status, offensive)
+berceuse 4 lullaby, "fairy" type 11, 90 % success, the target has a 100 % chance of becoming +2 in sleep, and that during about 4 turns, (fairy, mouth, sound, status, offensive)
+explosionMagique 4 magical explosion, "fairy" type 12, 15 magical power, 100 % success, the launcher has a 100 % chance of becoming -2 in special attack, -2 in special defense, and that during about 4 turns, the target has a 80 % chance of becoming -2 in success, and that during about 4 turns, (fairy, explosion, magical, offensive, stat)
+sanctionEnvironnementale 4 environmental punishment, "fairy" type 15, follows the number of "environment" cards in the target's exile, 10 magical power, 100 % success, (fairy, magical, offensive)
+chargeDeLaLicorne 4 unicorn tackle, "fairy" type 20, 20 physical power, the launcher suffers 40 % of the damages caused to the target, has a level 1 critical hit, 90 % success, the target has a 50 % chance of becoming +2 in confusion, and that during about 1 turns, (fairy, tackle, contact, physical, offensive)
+vegetalisation 4 vegetation, "grass" type, requires the launcher to be "grass" type, 100 % success, The launcher's level in his current type increases by 1, (grass, type)
+coupDEpine 4 thorny hit, "grass" type, 3 physical power, 100 % success, (grass, contact, physical, offensive)
+epineVivace 4 vivacious thorn, "grass" type, works as a reaction against a "contact" card, requires the launcher to be "grass" type, 3 physical power, 100 % success, (grass, contact, double try, reaction, physical, offensive)
+fleurMagique 4 magic flower, "grass" type, works as a reaction against a "magical" card, requires the launcher to be "grass" type, 100 % success, The launcher gets 2 cards "magic flower" in his hand, (grass, reaction)
+poudreDodo 4 sleep powder, "grass" type, 80 % success, the target has a 100 % chance of becoming +1 in sleep, and that during about 1 turns, (grass, powder, status, offensive)
+poudreParalysante 4 paralising powder, "grass" type, 80 % success, the target has a 100 % chance of becoming +1 in paralysis, and that during about 1 turns, (grass, powder, status, offensive)
+irrigation 4 irrigation, "grass" type, works as a reaction against a "water" card, requires the launcher to be "grass" type, 90 % success, adds 6 health points to the launcher, (grass, reaction)
+armureDEcorce 4 armour of bark, "grass" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in physical defense, and that during about 8 turns, (grass, stat)
+volDeVie 4 absorb, "grass" type 1, 3 magical power, the launcher absorbs 50 % of the damages caused to the target, 100 % success, (grass, magical, offensive, absorption)
+bouclierDeBois 4 wooden shield, "grass" type 1, works as a parry against a "hand" card, 5 physical power, 100 % success, (grass, weapon, shield, parry, physical, offensive)
+bouclierFloral 4 floral shield, "grass" type 1, works as a parry against a "bug" card, requires the launcher to be "grass" type, works following the number of "magic flower" cards in the launcher's hand, 4 magical power, the launcher absorbs 75 % of the damages caused to the target, 100 % success, the launcher has a 100 % chance of becoming +1 in sleep, and that during about 1 turns, the launcher has a 100 % chance to put 1 card "magic flower" into his exile, (grass, weapon, shield, parry, magical, offensive, absorption, status, manipulation)
+nectarSucre 4 sweet nectar, "grass" type 1, works as a parry against a "bug" card, 80 % success, adds 3 health points to the target, the launcher has a 100 % chance to take 1 card "bug" in the target's hand, (grass, parry, offensive, manipulation)
+racineNutritive 4 nourishing root, "grass" type 2, 100 % success, adds 20 health points to the launcher, the launcher has a 100 % chance of becoming +1 in paralysis, and that during about 4 turns, (grass, status)
+armureFlorale 4 floral armor, "grass" type 3, works following the number of "magic flower" cards in the launcher's hand, 100 % success, the launcher has a 100 % chance of becoming +2 in special defense, and that during about 8 turns, the launcher has a 100 % chance to put 1 card "magic flower" into his exile, (grass, stat, manipulation)
+repousseDEpine 4 thorny growth back, "grass" type 4, follows the number of "vivacious thorn" cards in the launcher's discard pile, 100 % success, the launcher has a 100 % chance to take 1 card "vivacious thorn" from his discard pile, The launcher gets 1 cards "vivacious thorn" in his hand, (grass, manipulation)
+syntheseChlorophyllienne 4 synthesis, "grass" type 4, 100 % success, adds 10 health points to the launcher, in about 4 turns the launcher has a 100 % chance of becoming +1 in special attack, +1 in special defense, and that during about 8 turns, (grass, stat)
+piegeDeRacine 4 trap of root, "grass" type 5, 4 physical power, 80 % success, the target has a 50 % chance of becoming +1 in paralysis, and that during about 1 turns, the target has a 100 % chance to put 1 card "foot" into his exile, (grass, contact, physical, offensive, manipulation)
+megaSangsue 4 mega drain, "grass" type 5, 6 magical power, the launcher absorbs 50 % of the damages caused to the target, 100 % success, (grass, magical, offensive, absorption)
+fouetLiane 4 vine whip, "grass" type 6, 6 physical power, 100 % success, (grass, contact, physical, offensive)
+elfe 4 elf, "grass" type 6, 100 % success, The launcher takes the "elf" posture (+3 power on "grass" launched attacks, +2 power on "fairy" launched attacks, +1 power on "magical" launched attacks, -2 power on "physical" launched attacks, +3 power on "physical" received attacks, +2 power on "axe" received attacks), (grass, posture)
+vitaliteFlorale 4 florale vitality, "grass" type 6, works following the number of "magic flower" cards in the launcher's hand, 100 % success, adds 3 health points to the launcher, the launcher has a 100 % chance to put 1 card "magic flower" into his exile, (grass, manipulation)
+tempeteVerte 4 leaf storm, "grass" type 7, 10 magical power, 100 % success, the launcher has a 100 % chance of becoming +1 in sleep, and that during about 1 turns, (grass, wind, magical, offensive, status)
+nidDouillet 4 cozy nest, "grass" type 7, 80 % success, the launcher has a 100 % chance to take 2 card "flying" in the target's hand, (grass, manipulation, offensive)
+rayonFloral 4 floral ray, "grass" type 8, works following the number of "magic flower" cards in the launcher's hand, 3 magical power, 100 % success, the launcher has a 100 % chance to put 1 card "magic flower" into his exile, (grass, ray, magical, offensive, manipulation)
+megafouet 4 power whip, "grass" type 9, 9 physical power, 100 % success, (grass, contact, physical, offensive)
+gigaSangsue 4 giga drain, "grass" type 10, 10 magical power, the launcher absorbs 75 % of the damages caused to the target, 100 % success, (grass, magical, offensive, absorption)
+enracinement 4 taking root, "grass" type 10, 100 % success, the target has a 100 % chance of becoming +1 in paralysis, and that during about 4 turns, 50 % chance of changing the target's type into "grass", (grass, status, offensive)
+fabricationDeNectar 4 nectar manufacturing, "grass" type 11, works following the number of "magic flower" cards in the launcher's hand, 100 % success, The launcher gets 1 cards "sweet nectar" in his hand, (grass)
+recolte 4 harvest, "grass" type 12, 100 % success, the launcher has a 100 % chance to take 2 card "grass" from his deck, (grass, manipulation)
+soleilRadieux 4 zenith, "grass" type 12, 100 % success, Changes the environment to "zenith" (+5 power on "solar beam" launched attacks, +2 power on "grass" launched attacks, +1 power on "fairy" launched attacks, -4 power on "dark" launched attacks, -3 power on "nightmare" launched attacks, -2 power on "ghost" launched attacks), (grass, environment)
+nouvelleFloraison 4 new flowering, "grass" type 12, follows the number of "magic flower" cards in the launcher's exile, 100 % success, the launcher has a 100 % chance to take 1 card "magic flower" from his exile, The launcher gets 1 cards "magic flower" in his hand, (grass, manipulation)
+ombrePaisible 4 peaceful shadow, "grass" type 13, follows the number of "offensive" cards in the target's hand, 80 % success, the target has a 100 % chance to put 1 card "offensive" into his exile, (grass, manipulation, offensive)
+balleGraine 4 bullet Seed, "grass" type 14, 4 physical power, can hit up to 5 times, 100 % success, the launcher has a 100 % chance of becoming +1 in sleep, and that during about 1 turns, (grass, physical, offensive, multi-hit, status)
+lanceSoleil 4 solar beam, "grass" type 15, 15 magical power, 100 % success, the launcher has a 100 % chance of becoming +2 in sleep, and that during about 2 turns, (grass, magical, offensive, status)
+spectralisation 4 ghost mind, "ghost" type, requires the launcher to be "ghost" type, 100 % success, The launcher's level in his current type increases by 1, (ghost, type)
+mainNostalgique 4 nostalgic hand, "ghost" type, works following the number of " " cards in the launcher's hand, 100 % success, the launcher has a 100 % chance to take 1 card from his discard pile, put 1 card into his exile, (ghost, hand, manipulation)
+rireEffrayant 4 frightening laugh, "ghost" type, 75 % success, the target has a 100 % chance of becoming +1 in fear, and that during about 1 turns, (ghost, mouth, sound, status, offensive)
+accesAuPasse 4 link to the past, "ghost" type, works following the number of "mirror" cards in the launcher's hand, 100 % success, the launcher has a 100 % chance to take 1 card from his discard pile, (ghost, manipulation)
+contactMaudit 4 wicked contact, "ghost" type, works as a reaction against a "contact" card, requires the launcher to be "ghost" type, 100 % success, the target has a 100 % chance of becoming +1 in curse, and that during about 2 turns, (ghost, contact, reaction, status, offensive)
+defaitisme 4 defeatism, "ghost" type, works as a reaction against a "contact" card, 100 % success, The target gets 1 cards "defeatism" in his hand, The target takes the "defeatism" posture (-1 power on "offensive" launched attacks, +1 power on "offensive" received attacks, +2 power on "psychic" received attacks), (ghost, reaction, posture, offensive)
+fausseRealite 4 false reality, "ghost" type, works as a parry against a "mirror" card, 100 % success, (ghost, parry)
+spectralisationReflexe 4 reflex ghost mind, "ghost" type 1, works as a parry against a "normal" card, 100 % success, 100 % chance of changing the launcher's type into "ghost", (ghost, parry, type)
+disparition 4 disappearance, "ghost" type 1, 100 % success, the launcher has a 100 % chance of becoming +4 in dodge, and that during about 1 turns, (ghost, stat)
+lechouille 4 lick, "ghost" type 1, 3 physical power, 100 % success, the target has a 30 % chance of becoming +1 in paralysis, and that during about 1 turns, (ghost, mouth, contact, physical, offensive)
+ventSpectral 4 spectral wind, "ghost" type 1, 6 magical power, 75 % success, (ghost, wind, magical, offensive)
+tintementLugubre 4 lugubrious tingling, "ghost" type 1, follows the number of "sound" cards in the launcher's discard pile, 2 magical power, 90 % success, (ghost, sound, magical, offensive)
+griffeOmbre 4 shadow claw, "ghost" type 2, 4 physical power, 100 % success, the target has a 20 % chance of becoming +1 in fear, and that during about 1 turns, (ghost, contact, hand, physical, offensive)
+dimensionSpectrale 4 spectral dimension, "ghost" type 2, 70 % success, 100 % chance of changing the launcher's type into "ghost", 100 % chance of changing the target's type into "ghost", (ghost, offensive, type)
+absorptionDePuissance 4 power taking, "ghost" type 2, 100 % success, the launcher has a 100 % chance of becoming +2 in special attack, and that during about 8 turns, the launcher has a 100 % chance of becoming +1 in sleep, and that during about 2 turns, the target has a 100 % chance of becoming -2 in special attack, and that during about 8 turns, (ghost, absorption, stat, offensive, status)
+absorptionDeConcentration 4 taking concentration, "ghost" type 2, 100 % success, the launcher has a 100 % chance of becoming +2 in special defense, and that during about 8 turns, the launcher has a 100 % chance of becoming +1 in sleep, and that during about 2 turns, the target has a 100 % chance of becoming -2 in special defense, and that during about 8 turns, (ghost, absorption, stat, offensive, status)
+toucherMaudit 4 blasting touch, "ghost" type 3, 75 % success, the target has a 100 % chance of becoming +1 in curse, and that during about 4 turns, (ghost, contact, hand, status, offensive)
+epeeMaudite 4 blasted sword, "ghost" type 3, 5 physical power, has a level 1 critical hit, 100 % success, the target has a 5 % chance of becoming +1 in curse, and that during about 1 turns, (ghost, weapon, sword, physical, offensive)
+zoneImmaterielle 4 immaterialism, "ghost" type 5, 100 % success, Changes the environment to "immaterialism" (-4 power on "physical" launched attacks), (ghost, environment)
+bourasqueSpectrale 4 spectral squall, "ghost" type 6, 9 magical power, 75 % success, the target has a 10 % chance of becoming +1 in fear, and that during about 1 turns, (ghost, wind, magical, offensive)
+revenante 4 card coming back, "ghost" type 6, 100 % success, the launcher has a 100 % chance to take 1 card from his discard pile, (ghost, manipulation)
+annihilation 4 annihilation, "ghost" type 8, 100 % success, the target has a 100 % chance to put 1 card into his exile, (ghost, manipulation, offensive)
+nouveauMaitre 4 new coming master, "ghost" type 10, 100 % success, the launcher has a 100 % chance to take 3 card in the target's exile, (ghost, manipulation, offensive)
+chocMaudit 4 blasted shock, "ghost" type 12, works following the target's "curse" status, 5 magical power, 100 % success, the target has a 100 % chance of becoming +1 in curse, and that during about 4 turns, (ghost, magical, offensive, status)
+pouvoirMalefique 4 blasting power, "ghost" type 15, 100 % success, the launcher has a 100 % chance of becoming +3 in physical attack, +3 in special attack, and that during about 8 turns, in about 4 turns the launcher has a 100 % chance of becoming +4 in curse, and that during about 4 turns, (ghost, stat, status)
+chatiment 4 punishment, "ghost" type 18, follows the number of " " cards in the target's hand, 2 magical power, 100 % success, (ghost, magical, offensive)
+piocheDemoniaque 4 demonic drawing, "ghost" type 20, works following the launcher's "curse" status, 100 % success, the target has a 100 % chance of becoming +1 in curse, and that during about 4 turns, the launcher has a 100 % chance to take 1 card from his deck, the target has a 100 % chance to take 1 card from his deck, (ghost, manipulation, offensive, status)
+psychogenese 4 psychogenesis, "psychic" type, requires the launcher to be "psychic" type, 100 % success, The launcher's level in his current type increases by 1, (psychic, type)
+contactRevelateur 4 revelatory contact, "psychic" type, works as a reaction against a "contact" card, requires the launcher to be "psychic" type, 100 % success, the target shows 8 cards from his hand, (psychic, contact, reaction, offensive)
+souvenir 4 souvenir, "psychic" type, 100 % success, the launcher has a 100 % chance to take 2 card from his exile, (psychic, manipulation)
+rayonDeprime 4 ray depression, "psychic" type, 3 magical power, 100 % success, (psychic, ray, magical, offensive)
+concentration 4 concentrate, "psychic" type, 100 % success, the launcher has a 100 % chance of becoming -2 in confusion, and that during about 4 turns, (psychic, status)
+demarchePersonnelle 4 personal measure, "psychic" type, 100 % success, the launcher has a 100 % chance to take 1 card "posture" from his deck, (psychic, manipulation)
+psychorigidite 4 psychoriginity, "psychic" type, works as a parry against a "posture" card, 100 % success, (psychic, parry)
+renfermement 4 confinement, "psychic" type, 100 % success, the launcher has a 100 % chance to take 2 card "barrier" from his deck, take 2 card "barrier" from his discard pile, (psychic, manipulation)
+reflexion 4 reflexion, "psychic" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in special attack, and that during about 8 turns, (psychic, stat)
+analyseDeRisque 4 risk analysis, "psychic" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in dodge, -2 in critical failure, and that during about 8 turns, (psychic, stat)
+ideation 4 ideation, "psychic" type 1, 100 % success, the launcher has a 100 % chance to take 1 card "magical" from his deck, (psychic, manipulation)
+prevoyance 4 forethought, "psychic" type 1, 100 % success, the launcher can see 4 cards from his deck, (psychic)
+precalcul 4 precalculus, "psychic" type 1, 100 % success, the launcher has a 100 % chance of becoming +4 in success, and that during about 4 turns, (psychic, stat)
+ondeEpileptique 4 epileptic wave, "psychic" type 1, 90 % success, the target has a 100 % chance of becoming -4 in success, and that during about 4 turns, (psychic, stat, offensive)
+trouDeMemoire 4 mini amnesia, "psychic" type 2, 100 % success, The target's level in his current type increases by -6, (psychic, offensive, type)
+cauchemar 4 nightmare, "psychic" type 3, works following the target's "sleep" status, 5 magical power, 80 % success, (psychic, magical, offensive)
+muselage 4 muzzling, "psychic" type 3, 80 % success, the target has a 100 % chance to put 2 card "mouth" into his exile, (psychic, manipulation, offensive)
+prescience 4 futur sight, "psychic" type 3, 100 % success, the launcher can see 8 cards from his deck, (psychic)
+perturbationPsychique 4 psychic disruption, "psychic" type 4, 100 % success, the target has a 100 % chance of becoming +1 in critical failure, and that during about 4 turns, (psychic, stat, offensive)
+levikinesie 4 telekinesis, "psychic" type 4, 75 % success, 100 % chance of changing the target's type into "flying", (psychic, offensive, type)
+accesALInconscient 4 rashness access, "psychic" type 4, 100 % success, the target shows 8 cards from his deck, (psychic, offensive)
+desamorcage 4 defusing, "psychic" type 4, 100 % success, the target has a 100 % chance to put 2 card "explosion" into his exile, (psychic, manipulation, offensive)
+secoussePsychique 4 psyshock, "psychic" type 5, 6 magical power, 100 % success, the target has a 30 % chance of becoming -1 in physical defense, -1 in special defense, and that during about 4 turns, (psychic, magical, offensive)
+repos 4 relax, "psychic" type 5, 100 % success, adds 50 health points to the launcher, the launcher has a 100 % chance of becoming +2 in sleep, and that during about 4 turns, (psychic, status)
+preparationMentale 4 mental prepare, "psychic" type 5, 100 % success, the launcher has a 100 % chance of becoming +2 in special attack, +1 in success, and that during about 4 turns, (psychic, stat)
+apprentissageProfond 4 apprenticed, "psychic" type 5, 100 % success, the launcher has a 100 % chance of becoming +2 in sleep, and that during about 2 turns, The launcher's level in his current type increases by 8, (psychic, type, status)
+anticipation 4 anticipation, "psychic" type 6, 100 % success, the target shows 8 cards from his hand, (psychic, offensive)
+hachePsionique 4 psycho cut, "psychic" type 6, 6 physical power, has a level 2 critical hit, 100 % success, the target shows 4 cards from his deck, (psychic, weapon, axe, physical, offensive)
+cauchemarDInsecte 4 insect nightmare, "psychic" type 6, works following the target's "sleep" status, 5 magical power, 80 % success, The target gets 4 cards "entomophobia" in his hand, (psychic, nightmare, magical, offensive)
+cauchemarDeFantome 4 ghost nightmare, "psychic" type 6, works following the target's "sleep" status, 5 magical power, 80 % success, The target gets 4 cards "phasmophobia" in his hand, (psychic, nightmare, magical, offensive)
+cauchemarDeForet 4 forest nightmare, "psychic" type 6, works following the target's "sleep" status, 5 magical power, 80 % success, The target gets 4 cards "hylophobia" in his hand, (psychic, nightmare, magical, offensive)
+cauchemarDePlume 4 feather nightmare, "psychic" type 6, works following the target's "sleep" status, 5 magical power, 80 % success, The target gets 4 cards "ornithophobia" in his hand, (psychic, nightmare, magical, offensive)
+hypnose 4 hypnosis, "psychic" type 8, 90 % success, the target has a 100 % chance of becoming +1 in sleep, and that during about 4 turns, (psychic, status, offensive)
+devoreve 4 dream eater, "psychic" type 10, works following the target's "sleep" status, 8 magical power, the launcher absorbs 100 % of the damages caused to the target, 80 % success, (psychic, magical, offensive, absorption)
+amnesie 4 amnesia, "psychic" type 12, 100 % success, The target's level in his current type increases by -10, (psychic, offensive, type)
+resurgencePhobique 4 phobic resurgence, "psychic" type 12, works following the number of "phobia" cards in the target's discard pile, 100 % success, the target has a 100 % chance to take 1 card "phobia" from his discard pile, (psychic, manipulation, offensive)
+metalisation 4 steelworks, "steel" type, requires the launcher to be "steel" type, 100 % success, The launcher's level in his current type increases by 1, (steel, type)
+jetDeBoulon 4 bolt thrower, "steel" type, 3 physical power, 100 % success, (steel, physical, offensive)
+volonteDeFer 4 willpower, "steel" type, 100 % success, removes 4 turns from the launcher's draw prohibition', (steel)
+paratonnerre 4 lightning rod, "steel" type, works as a parry against a "electric" card, 100 % success, (steel, parry)
+peauDAcier 4 steel skin, "steel" type, works as a parry against a "blood" card, 100 % success, (steel, parry)
+insensibiliteMetalique 4 metalic insensitivity, "steel" type 1, works as a parry against a "stat" card, 100 % success, (steel, parry)
+lameDeDefense 4 defensive blade, "steel" type 1, works as a reaction against a "contact" card, 2 physical power, can hit up to 4 times, has a level 1 critical hit, 90 % success, (steel, weapon, reaction, physical, offensive, multi-hit)
+accumulateurEnergetique 4 energetic accumulator, "steel" type 1, works as a reaction against a "electric" card, 100 % success, the launcher has a 100 % chance of becoming +1 in special attack, and that during about 4 turns, (steel, reaction, stat)
+nerfDAcier 4 steal nerve, "steel" type 1, 100 % success, the launcher has a 100 % chance of becoming -2 in critical failure, and that during about 8 turns, (steel, stat)
+armureDAcier 4 steel armour, "steel" type 1, 100 % success, the launcher has a 100 % chance of becoming +2 in physical defense, -2 in dodge, and that during about 8 turns, (steel, stat)
+laserRouge 4 red laser, "steel" type 1, 3 magical power, 100 % success, the target has a 10 % chance of becoming -1 in success, and that during about 1 turns, (steel, ray, magical, offensive)
+cisaille 4 shear, "steel" type 1, 100 % success, the target has a 100 % chance to put 1 card "grass" into his exile, (steel, double try, manipulation, offensive)
+miroirAuxAlouettes 4 bird mirror, "steel" type 1, works as a parry against a "flying" card, 100 % success, the target has a 100 % chance of becoming -8 in dodge, and that during about 2 turns, (steel, mirror, parry, stat, offensive)
+bouclierDAcier 4 steel shield, "steel" type 1, works as a parry against a "sword" card, 7 physical power, 100 % success, (steel, weapon, shield, parry, physical, offensive)
+epeeDAcier 4 steal sword, "steel" type 3, 5 physical power, has a level 1 critical hit, 100 % success, the target has a 5 % chance of becoming +1 in fear, and that during about 1 turns, (steel, weapon, sword, physical, offensive)
+laserBleu 4 blue laser, "steel" type 4, 6 magical power, 100 % success, the target has a 10 % chance of becoming -1 in success, and that during about 2 turns, the target has a 20 % chance of becoming +1 in burning, and that during about 1 turns, (steel, ray, magical, offensive)
+aimant 4 magnet, "steel" type 4, 100 % success, the launcher has a 100 % chance to take 1 card "steel" from his deck, (steel, manipulation)
+perceArmure 4 pearcing armour, "steel" type 5, 100 % success, the target has a 100 % chance of becoming -2 in physical defense, and that during about 4 turns, (steel, stat, offensive)
+grincement 4 screech, "steel" type 5, 100 % success, the target has a 100 % chance of becoming -2 in special defense, and that during about 4 turns, (steel, sound, stat, offensive)
+jetDeMiroir 4 mirror throw, "steel" type 5, works following the number of "mirror" cards in the launcher's hand, 4 physical power, has a level 1 critical hit, 90 % success, the launcher has a 100 % chance to put 1 card "mirror" into his exile, (steel, physical, offensive, manipulation)
+galerieDesGlaces 4 mirror gallery, "steel" type 5, 100 % success, Changes the environment to "mirror gallery" (+3 power on "mirror" launched attacks, +2 power on "ray" launched attacks, +1 power on "grass" launched attacks, -2 power on "dark" launched attacks, -1 power on "bug" launched attacks), (steel, environment)
+aileDAcier 4 steel wing, "steel" type 6, 8 physical power, has a level 1 critical hit, 100 % success, 100 % chance of changing the launcher's type into "flying", (steel, contact, physical, offensive, type)
+graissage 4 lubricating, "steel" type 6, 100 % success, the launcher has a 100 % chance of becoming +2 in success, and that during about 8 turns, (steel, stat)
+bombeAimant 4 magnet bomb, "steel" type 8, 10 physical power, never fails, (steel, explosion, physical, offensive, unmissable)
+jetDePlasma 4 plasma thrower, "steel" type 8, 12 magical power, 80 % success, the launcher has a 100 % chance of becoming +1 in burning, and that during about 2 turns, the target has a 20 % chance of becoming -1 in success, and that during about 4 turns, the target has a 40 % chance of becoming +1 in burning, and that during about 2 turns, (steel, magical, offensive, status)
+miniaturisation 4 miniaturization, "steel" type 10, 100 % success, the launcher has a 100 % chance of becoming -2 in physical attack, -4 in physical defense, +6 in dodge, and that during about 8 turns, (steel, stat)
+regulationThermique 4 thermic regulation, "steel" type 12, 100 % success, the launcher has a 100 % chance of becoming -2 in burning, -2 in freezing, and that during about 8 turns, (steel, status)
+rayonMiroitant 4 sparkling ray, "steel" type 15, works following the number of "mirror" cards in the launcher's hand, 6 magical power, 100 % success, the target has a 30 % chance of becoming -1 in success, and that during about 8 turns, (steel, ray, magical, offensive)
+explosionDePlasma 4 explosion of plasma, "steel" type 20, 30 magical power, the launcher suffers 50 % of the damages caused to the target, 100 % success, the launcher has a 100 % chance of becoming +2 in burning, and that during about 4 turns, the target has a 100 % chance of becoming -2 in success, and that during about 8 turns, the target has a 100 % chance of becoming +2 in burning, and that during about 4 turns, (steel, explosion, critical risk, magical, offensive, stat, status)
+espritDragonique 4 dragonmind, "dragon" type, requires the launcher to be "dragon" type, 100 % success, The launcher's level in his current type increases by 1, (dragon, type)
+dracoEternuement 4 dragon-sneeze, "dragon" type, 3 magical power, 100 % success, (dragon, magical, offensive)
+pression 4 pressure, "dragon" type, 100 % success, The target's level in his current type increases by -3, (dragon, offensive, type)
+barriereDeSilence 4 silence barrier, "dragon" type 1, works as a parry against a "sound" card, 100 % success, the target has a 100 % chance to put 5 card "sound" into his exile, (dragon, parry, barrier, manipulation, offensive)
+consolidationSpirituelle 4 spiritual consolidation, "dragon" type 1, works as a reaction against a "magical" card, 100 % success, the launcher has a 100 % chance of becoming +1 in special defense, and that during about 8 turns, (dragon, reaction, stat)
+ecailleImpermeable 4 impermeable scail, "dragon" type 1, works as a parry against a "absorption" card, 100 % success, the launcher has a 100 % chance of becoming -1 in success, and that during about 8 turns, The launcher gets 1 cards "impermeable scail" in his hand, (dragon, parry, stat)
+criDuDragon 4 dragon shout, "dragon" type 1, 100 % success, the launcher has a 100 % chance of becoming -1 in fear, and that during about 8 turns, (dragon, mouth, sound, status)
+danseDuDragon 4 dragon dance, "dragon" type 2, 100 % success, the launcher has a 100 % chance of becoming +1 in physical attack, +1 in special attack, +1 in success, +1 in critical hit, and that during about 4 turns, (dragon, stat)
+dracogriffe 4 dragon claw, "dragon" type 3, 5 physical power, 100 % success, (dragon, contact, hand, physical, offensive)
+hurlementDuDragon 4 dragon screaming, "dragon" type 5, 5 magical power, 100 % success, the target has a 20 % chance of becoming +1 in fear, and that during about 1 turns, (dragon, mouth, sound, magical, offensive)
+crocDragon 4 dragon fang, "dragon" type 8, 6 physical power, 100 % success, the target has a 50 % chance of becoming -1 in physical defense, and that during about 4 turns, the target has a 30 % chance of becoming +1 in fear, and that during about 1 turns, (dragon, mouth, fang, contact, physical, offensive)
+chargeDuDragon 4 dragon rush, "dragon" type 10, 15 physical power, the launcher suffers 30 % of the damages caused to the target, 80 % success, (dragon, tackle, contact, physical, offensive)
+silence 4 silence, "dragon" type 10, 100 % success, the target has a 100 % chance to put 2 card "sound" into his exile, (dragon, manipulation, offensive)
+frenesie 4 rage, "dragon" type 12, works following the launcher's "confusion" status, 6 magical power, can hit up to 4 times, 100 % success, the target has a 20 % chance of becoming +1 in fear, and that during about 2 turns, (dragon, magical, offensive, multi-hit)
+dracoblast 4 dragon blast, "dragon" type 14, 12 magical power, 100 % success, the target has a 50 % chance of becoming +1 in fear, and that during about 2 turns, (dragon, mouth, magical, offensive)
+respect 4 respect, "dragon" type 15, 100 % success, The target takes the "respect" posture (-4 power on "physical" launched attacks, ), (dragon, posture, offensive)
+humilite 4 humility, "dragon" type 15, 100 % success, The target takes the "humility" posture (-4 power on "magical" launched attacks, ), (dragon, posture, offensive)
+colere 4 outrage, "dragon" type 16, 8 physical power, can hit up to 4 times, 80 % success, the launcher has a 100 % chance of becoming +2 in confusion, and that during about 4 turns, (dragon, contact, hand, physical, offensive, multi-hit, status)
+dracochoc 4 dragon pulse, "dragon" type 20, 18 magical power, 100 % success, the target has a 75 % chance of becoming +2 in confusion, and that during about 4 turns, (dragon, magical, offensive)
+refroidissement 4 cooling, "ice" type, requires the launcher to be "ice" type, 100 % success, The launcher's level in his current type increases by 1, (ice, type)
+bouleDeNeige 4 snowball, "ice" type, 3 physical power, 100 % success, (ice, physical, offensive)
+elixirDeFraicheur 4 elixir of coolness, "ice" type, has a level 1 critical failiure, 100 % success, the launcher has a 100 % chance of becoming -1 in sleep, and that during about 4 turns, (ice, elixir, status)
+glissementDeMain 4 sliding hand, "ice" type, works following the number of " " cards in the launcher's hand, 100 % success, the launcher has a 100 % chance to take 1 card from his deck, put 1 card into his discard pile, (ice, hand, manipulation)
+igloo 4 igloo, "ice" type, 100 % success, the launcher has a 100 % chance of becoming -1 in success, and that during about 8 turns, the launcher has a 100 % chance of becoming -1 in freezing, and that during about 8 turns, (ice, stat, status)
+englacement 4 icing, "ice" type 1, 100 % success, the launcher has a 100 % chance of becoming +1 in special defense, and that during about 8 turns, (ice, stat)
+poudreuse 4 powder snow, "ice" type 1, 3 magical power, 100 % success, the target has a 75 % chance of becoming -1 in success, and that during about 2 turns, (ice, powder, magical, offensive)
+bouclierDeGlace 4 ice shield, "ice" type 1, works as a parry against a "axe" card, 6 physical power, 100 % success, the target has a 10 % chance of becoming +1 in freezing, and that during about 1 turns, (ice, weapon, shield, parry, physical, offensive)
+engourdissement 4 numbing, "ice" type 2, 100 % success, The target can't draw during 2 turns, (ice, offensive)
+ventGlacial 4 freezing wind, "ice" type 2, 5 magical power, 80 % success, the target has a 5 % chance of becoming +1 in freezing, and that during about 1 turns, (ice, wind, magical, offensive)
+epeeDeGlace 4 iced sword, "ice" type 3, 5 physical power, has a level 1 critical hit, 100 % success, the target has a 5 % chance of becoming +1 in freezing, and that during about 1 turns, (ice, weapon, sword, physical, offensive)
+poingGlace 4 ice punch, "ice" type 4, 8 physical power, 100 % success, the target has a 10 % chance of becoming +1 in freezing, and that during about 1 turns, (ice, contact, hand, physical, offensive)
+grele 4 hail storm, "ice" type 5, 100 % success, Changes the environment to "hail storm" (+3 power on "ice" launched attacks, +2 power on "wind" launched attacks, -3 power on "grass" launched attacks), (ice, environment)
+crocGivre 4 ice fang, "ice" type 6, 6 physical power, 100 % success, the target has a 20 % chance of becoming +1 in freezing, and that during about 2 turns, (ice, mouth, fang, contact, physical, offensive)
+bourasqueGlaciale 4 freezing squall, "ice" type 6, 8 magical power, 80 % success, the target has a 10 % chance of becoming +1 in freezing, and that during about 2 turns, (ice, wind, magical, offensive)
+graisseIsolante 4 thick Fat, "ice" type 6, 100 % success, The launcher takes the "thick Fat" posture (-3 power on "physical" launched attacks, -2 power on "fire" received attacks, -2 power on "ice" received attacks, -1 power on "physical" received attacks), (ice, posture)
+stalagtite 4 icicle spear, "ice" type 9, 10 physical power, has a level 1 critical hit, 80 % success, (ice, physical, offensive)
+glaciation 4 sheer cold, "ice" type 11, 80 % success, the target has a 100 % chance of becoming +1 in freezing, and that during about 4 turns, (ice, status, offensive)
+avalanche 4 avalanche, "ice" type 12, 8 physical power, 90 % success, in about 1 turns the target has a 30 % chance of becoming +1 in freezing, and that during about 2 turns, (ice, surge, physical, offensive)
+chocGlace 4 ice shock, "ice" type 13, works following the target's "freezing" status, 5 magical power, 100 % success, (ice, magical, offensive)
+stupeurGlacee 4 glaciate, "ice" type 14, 100 % success, The target can't draw during 4 turns, (ice, offensive)
+laserGlace 4 ice beam, "ice" type 16, 12 magical power, 100 % success, the target has a 25 % chance of becoming +1 in freezing, and that during about 2 turns, (ice, ray, magical, offensive)

@@ -1,0 +1,21 @@
+#banlist de julio 2017 para el CCP 2017
+#mínimo 40 cartas, máximo 60
+mincards: 40
+maxcards: 60
+
+#cartas Prohibidas. No puede haber ninguna en el mazo
+#shock de terror
+chocTerreur 0
+
+#cartas únicas: solo una en el mazo
+#cartas Semi prohibidas:  máximo 2 copias: audiopoder, poder ardiente, sombra pacífica.
+sonophilie 2
+puissanceBrulante 2
+ombrePaisible 2
+
+#cartas Restringidas: máximo 3 copias por mazo: canción de cuna, frío polar, congelación, #aplastamiento colosal, onda trueno.
+berceuse 3
+glaciation 3
+stupeurGlacee 3
+cageEclair 3
+ecrasementDeColosse 3

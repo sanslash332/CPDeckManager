@@ -26,6 +26,7 @@ namespace CP_DeckManager
         private Deck currentDeck;
         private List<Card> filteredCards;
         private bool NVDA = true;
+        private Banlist banlist;
 
 
         public MainWindow()
@@ -40,6 +41,18 @@ namespace CP_DeckManager
             deckCards.ItemsSource = currentDeck.cards;
             
             loadAllCards();
+            try
+            {
+                banlist = new Banlist("banlist.txt", this.allCards);
+
+            }
+            catch(Exception e)
+            {
+                ScreenReaderControl.speech("error terribleeee no hay banlist!:" + e.ToString(), true);
+
+            }
+            
+
             cardList.ItemsSource = allCards;
             ContextMenu sortMenu = new ContextMenu();
             foreach(string s in types)
@@ -386,13 +399,7 @@ if(NVDA)
 
         private void saveButton_Click(object sender, RoutedEventArgs e)
         {
-            if(currentDeck.totalCards<40 || currentDeck.totalCards>60)
-            {
-                ScreenReaderControl.speech("no se puede guardar un maso con menos de 40 cartas, o más de 60", true);
-                return;
-
-
-            }
+            
             SaveFileDialog sv = new SaveFileDialog();
             sv.Filter =     "archivo de texto|*.txt| cualquier wea |*.*";
             sv.CheckFileExists = false;
@@ -408,6 +415,21 @@ if(NVDA)
             }
 
             
+        }
+
+        private void validateButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(banlist.checkDeck(this.currentDeck))
+            {
+                ScreenReaderControl.speech("Mazo válido:",true);
+
+
+            }
+            else
+            {
+                ScreenReaderControl.speech(banlist.getErrores(),true);
+
+            }
         }
     }
 }
