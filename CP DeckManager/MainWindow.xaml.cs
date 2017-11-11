@@ -13,6 +13,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
+using IrrKlang;
+using System.Reflection;
+using System.Windows.Automation;
 
 namespace CP_DeckManager
 {
@@ -27,11 +30,17 @@ namespace CP_DeckManager
         private List<Card> filteredCards;
         private bool NVDA = true;
         private Banlist banlist;
+        private string secretWord;
+        private ISoundEngine player;
+        private ISoundSource soundsourse;
 
 
         public MainWindow()
         {
             InitializeComponent();
+            this.secretWord = "";
+            player = new ISoundEngine();
+            soundsourse = player.AddSoundSourceFromIOStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("CP_DeckManager.secret.mp3"), "secret.mp3");
             this.KeyDown += MainWindow_KeyDown;
             cardList.SelectionChanged += cardList_SelectionChanged;
             deckCards.SelectionChanged += deckCards_SelectionChanged;
@@ -39,6 +48,7 @@ namespace CP_DeckManager
             types = new List<string>();
             types.Add("todos");
             deckCards.ItemsSource = currentDeck.cards;
+            
             
             loadAllCards();
             try
@@ -83,6 +93,36 @@ namespace CP_DeckManager
             deckCards.KeyDown += cardList_KeyDown;
             deckCards.GotKeyboardFocus += DeckCards_GotKeyboardFocus;
             cardList.GotKeyboardFocus+= DeckCards_GotKeyboardFocus;
+            listaPrueba.Items.Add(allCards[30]);
+            listaPrueba.Items.Refresh();
+            ScreenReaderControl.speech("la lista tiene: " + listaPrueba.Items.Count, true);
+            cardList.ItemContainerGenerator.StatusChanged+= ItemContainerGenerator_StatusChanged;
+
+
+        }
+
+        private void ItemContainerGenerator_StatusChanged(object sender, EventArgs e)
+        {
+            if(cardList.ItemContainerGenerator.Status!= System.Windows.Controls.Primitives.GeneratorStatus.ContainersGenerated)
+            {
+                return;
+            }
+            cardList.ItemContainerGenerator.StatusChanged -= ItemContainerGenerator_StatusChanged;
+            var cartitaitem = cardList.Items[0] as Card;
+            ScreenReaderControl.speech("Nombre del objeto: " + cartitaitem.ToString(), false);
+            ListBoxItem itemsito = cardList.ItemContainerGenerator.ContainerFromIndex(0) as ListBoxItem;
+            if (itemsito == null)
+            {
+                ScreenReaderControl.speech("es nulo ", true);
+
+            }
+
+
+
+
+            AutomationProperties.SetName(itemsito, "carta loca");
+
+
         }
 
         private void saycard(Card c, bool quant, bool interruption)
@@ -91,11 +131,11 @@ namespace CP_DeckManager
             {
                 if(quant)
                 {
-                    ScreenReaderControl.speech("x" + c.quantity.ToString() + ", " + c.printToNvda(), interruption);
+                    //ScreenReaderControl.speech("x" + c.quantity.ToString() + ", " + c.printToNvda(), interruption);
                 }
                 else
                 {
-                    ScreenReaderControl.speech(c.printToNvda(), interruption);
+                    //ScreenReaderControl.speech(c.printToNvda(), interruption);
                 }
             }
         }
@@ -145,6 +185,7 @@ namespace CP_DeckManager
 if(NVDA)
 {
     Card c = (Card)cardList.SelectedItem;
+                
                 saycard(c, false, true);
 }
         }
@@ -260,6 +301,30 @@ if(NVDA)
 
         void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
+            if(e.Key== Key.B)
+            {
+                this.secretWord = "";
+            }
+            this.secretWord += e.Key.ToString();
+            
+            
+
+            if(this.secretWord.ToLower().Equals("banlist"))
+            {
+                player.Play2D(soundsourse, false, false, false);
+                ScreenReaderControl.speech("editor de banlist", true);
+                BanlistEditorWindow banlistwindow = new BanlistEditorWindow();
+                banlistwindow.Owner= this;
+                banlistwindow.ShowDialog();
+
+
+
+
+
+                return;
+
+            }
+
             if(e.Key== Key.T)
             {
                 ScreenReaderControl.speech(string.Format("El maso actual contiene {0} cartas.", currentDeck.totalCards.ToString()), true);

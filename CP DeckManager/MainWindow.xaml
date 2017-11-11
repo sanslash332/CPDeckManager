@@ -5,16 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CP_DeckManager"
         mc:Ignorable="d"
-        Title="CP Deck Manager: july17 edition" Height="350" Width="525">
+        Title="CP Deck Manager: V17.11" Height="350" Width="525">
     <Grid Margin="-1,-2,1,2">
         <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="1,1,0,0">
+            <TextBlock Text="Lista random " />
+
+            <ListBox Name="listaPrueba">
+                <TextBlock Text="Texto 1" />
+                <ListBoxItem Name="item2">
+                    <TextBlock Text="bloque dentro de list item " />
+                    
+                </ListBoxItem>
+
+            </ListBox>
+            
             <ListBox Height="100" x:Name="cardList" ItemsSource="{Binding}">
-                <ListBox.ItemTemplate>
+                <ListBox.ItemTemplate >
                     <DataTemplate>
                         
-                        <StackPanel>
+                        <StackPanel >
                         
-                            <TextBlock Text="{Binding name}"/>
+                            <TextBlock Text="{Binding name}" />
                             <TextBlock Text="{Binding type}"/>
                             <TextBlock Text="{Binding level}"/>
                             <TextBlock Text="{Binding description}"/>
