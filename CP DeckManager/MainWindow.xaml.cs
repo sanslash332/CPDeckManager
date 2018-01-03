@@ -93,9 +93,9 @@ namespace CP_DeckManager
             deckCards.KeyDown += cardList_KeyDown;
             deckCards.GotKeyboardFocus += DeckCards_GotKeyboardFocus;
             cardList.GotKeyboardFocus+= DeckCards_GotKeyboardFocus;
-            listaPrueba.Items.Add(allCards[30]);
-            listaPrueba.Items.Refresh();
-            ScreenReaderControl.speech("la lista tiene: " + listaPrueba.Items.Count, true);
+            
+            
+            
             cardList.ItemContainerGenerator.StatusChanged+= ItemContainerGenerator_StatusChanged;
 
 
@@ -107,20 +107,21 @@ namespace CP_DeckManager
             {
                 return;
             }
-            cardList.ItemContainerGenerator.StatusChanged -= ItemContainerGenerator_StatusChanged;
+            
             var cartitaitem = cardList.Items[0] as Card;
-            ScreenReaderControl.speech("Nombre del objeto: " + cartitaitem.ToString(), false);
-            ListBoxItem itemsito = cardList.ItemContainerGenerator.ContainerFromIndex(0) as ListBoxItem;
+            //ScreenReaderControl.speech("Nombre del objeto: " + cartitaitem.ToString(), false);
+            ListBoxItem itemsito = cardList.ItemContainerGenerator.ContainerFromIndex(4) as ListBoxItem;
             if (itemsito == null)
             {
-                ScreenReaderControl.speech("es nulo ", true);
+                //ScreenReaderControl.speech("es nulo ", true);
 
             }
-
-
-
-
-            AutomationProperties.SetName(itemsito, "carta loca");
+            else
+            {
+                //AutomationProperties.SetName(itemsito, "carta loca");
+                //itemsito.Focus();
+                cardList.ItemContainerGenerator.StatusChanged -= ItemContainerGenerator_StatusChanged;
+            }
 
 
         }
@@ -228,16 +229,38 @@ if(NVDA)
             }
 
         }
+
+        void refreshAndKeepSelection(ListBox lb, int oldIndex)
+        {
+            deckCards.Items.Refresh();
+            cardList.Items.Refresh();
+            if(lb.Items.Count > oldIndex)
+            {
+                lb.SelectedIndex = oldIndex;
+
+                lb.ScrollIntoView(lb.SelectedItem);
+                lb.UpdateLayout();
+                ListBoxItem lbi1 = lb.ItemContainerGenerator.ContainerFromIndex(oldIndex) as ListBoxItem;
+                if(lbi1!=null)
+                {
+                    lbi1.Focus();
+                }
+            }
+            
+        }
+
         void cardList_KeyDown(object sender, KeyEventArgs e)
         {
             
 
             ListBox lb = (ListBox)sender;
+            int index = lb.SelectedIndex;
+
             if(e.Key== Key.Z || e.Key== Key.Space || e.Key== Key.Return)
             {
-                if(currentDeck.totalCards==60)
+                if(currentDeck.totalCards>=80)
                 {
-                    ScreenReaderControl.speech("no se pueden añadir más de 60 cartas", true);
+                    ScreenReaderControl.speech("no se pueden añadir más de 80 cartas", true);
                     return;
 
                 }
@@ -250,10 +273,15 @@ if(NVDA)
                 
                 if(Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift))
                 {
-                    currentDeck.addCard(c);
-                    currentDeck.addCard(c);
-                    currentDeck.addCard(c);
-                    currentDeck.addCard(c);
+                    int contador = 0;
+                    while(currentDeck.totalCards<80 && contador < 4)
+                    {
+                        currentDeck.addCard(c);
+                        contador++;
+
+
+                    }
+
                     ScreenReaderControl.speech(string.Format("(x4) {0} añadida.", c.name), true);
 
                 }
@@ -263,8 +291,7 @@ if(NVDA)
                     ScreenReaderControl.speech(string.Format("{0} añadida.", c.name), true);
 
                 }
-                deckCards.Items.Refresh();
-
+                refreshAndKeepSelection(lb, index);
             }
             else if(e.Key== Key.X || e.Key== Key.Back)
             {
@@ -290,13 +317,13 @@ if(NVDA)
                     ScreenReaderControl.speech(string.Format("{0} removida", c.name), true);
 
                 }
-                deckCards.Items.Refresh();
-
+                refreshAndKeepSelection(lb,index);
 
 
             }
-            
 
+
+            
         }
 
         void MainWindow_KeyDown(object sender, KeyEventArgs e)
@@ -495,6 +522,11 @@ if(NVDA)
                 ScreenReaderControl.speech(banlist.getErrores(),true);
 
             }
+        }
+
+        private void searchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

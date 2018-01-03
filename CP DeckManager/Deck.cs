@@ -71,7 +71,7 @@ namespace CP_DeckManager
             string outdata= "";
             foreach(Card c in cards)
             {
-                outdata += c.printToDeck() + "\r\n";
+                outdata += c.printToDeck + "\r\n";
             }
             outdata = outdata.Remove(outdata.LastIndexOf('\r'));
             return (outdata);

@@ -1,74 +1,64 @@
-﻿<Window x:Class="CP_DeckManager.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CP_DeckManager"
-        mc:Ignorable="d"
-        Title="CP Deck Manager: V17.11" Height="350" Width="525">
-    <Grid Margin="-1,-2,1,2">
-        <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="1,1,0,0">
-            <TextBlock Text="Lista random " />
+﻿    <Window x:Class="CP_DeckManager.MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:CP_DeckManager"
+            mc:Ignorable="d"
+            Title="CP Deck Manager: V17.11" Height="350" Width="525">
 
-            <ListBox Name="listaPrueba">
-                <TextBlock Text="Texto 1" />
-                <ListBoxItem Name="item2">
-                    <TextBlock Text="bloque dentro de list item " />
+        <Window.Resources>
+        <Style TargetType="ListBoxItem">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding isInDeck}" Value="True">
+                    <Setter Property="AutomationProperties.Name" Value="{Binding printToNvda            }"/>
                     
-                </ListBoxItem>
-
-            </ListBox>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding isInDeck}" Value="False">
+                   
+                    <Setter Property="AutomationProperties.Name" Value="{Binding printToNvda}"/>
+                </DataTrigger>
+            </Style.Triggers>
             
-            <ListBox Height="100" x:Name="cardList" ItemsSource="{Binding}">
-                <ListBox.ItemTemplate >
-                    <DataTemplate>
-                        
-                        <StackPanel >
-                        
-                            <TextBlock Text="{Binding name}" />
-                            <TextBlock Text="{Binding type}"/>
-                            <TextBlock Text="{Binding level}"/>
-                            <TextBlock Text="{Binding description}"/>
-        </StackPanel>
+        </Style>
+            <DataTemplate DataType="{x:Type local:Card}">
+
+                <StackPanel >
+                    <TextBlock Text="{Binding quantityText}">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding isInDeck}" Value="False">
+                                        <Setter Property="Visibility" Value="Hidden" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                    <TextBlock Text="{Binding name}" />
+                    <TextBlock Text="{Binding type}"/>
+                    <TextBlock Text="{Binding level}"/>
+                    <TextBlock Text="{Binding description}"/>
+                </StackPanel>
+            </DataTemplate>
+        
+        </Window.Resources>
+        <Grid Margin="-1,-2,1,2                                                                                             ">
+            <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="1,1,0,0">                       
+                <TextBox Name="searchTextBox" TextChanged="searchTextBox_TextChanged" AutomationProperties.Name="Buscar carta: " AutomationProperties.HelpText="Escriba nombre o tag de carta a filtrar. puede buscar varios términos separándolos con un &amp;." TextWrapping="Wrap" Margin="-1,0,1,0" />
+
+        
+                    <ListBox Height="100" x:Name="cardList" ItemsSource="{Binding}" AutomationProperties.Name="Lista de cartas: " />
+                    <ListBox Height="100" x:Name="deckCards" ItemsSource="{Binding}" AutomationProperties.Name="Mazo: " />
 
 
-        </DataTemplate>
-                </ListBox.ItemTemplate>
-
-                
-                
-            </ListBox>
-            <ListBox Height="100" x:Name="deckCards" ItemsSource="{Binding}">
-
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <TextBlock Text="{Binding quantityText}" />
-                            
-                            <TextBlock Text="{Binding name}"/>
-                            
-                            <TextBlock Text="{Binding type}"/>
-                            <TextBlock Text="{Binding level}"/>
-                            <TextBlock Text="{Binding description}"/>
                         </StackPanel>
+            <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" VerticalAlignment="Top" Width="100" Margin="-1,-2,0,0">
+                <Button x:Name="saveButton" Content="Guardar maso" Height="100" VerticalAlignment="Top" Width="75" Click="saveButton_Click"/>
+                <Button x:Name="validateButton" Content="Validar mazo para torneo" Height="100" VerticalAlignment="Top" Width="75" Click="validateButton_Click" />
+                <Button x:Name="loadButton" Content="Cargar Maso" Height="100" VerticalAlignment="Top" Width="75" Click="loadButton_Click"/>
+            </DockPanel>
 
 
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-
-
-
-            
-            </ListBox>
-
-
-        </StackPanel>
-        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" VerticalAlignment="Top" Width="100" Margin="-1,-2,0,0">
-            <Button x:Name="saveButton" Content="Guardar maso" Height="100" VerticalAlignment="Top" Width="75" Click="saveButton_Click"/>
-            <Button x:Name="validateButton" Content="Validar mazo para torneo" Height="100" VerticalAlignment="Top" Width="75" Click="validateButton_Click" />
-            <Button x:Name="loadButton" Content="Cargar Maso" Height="100" VerticalAlignment="Top" Width="75" Click="loadButton_Click"/>
-        </DockPanel>
-
-
-    </Grid>
-</Window>
+        </Grid>
+    </Window>

@@ -7,36 +7,49 @@ namespace CP_DeckManager
 {
     class Card
     {
-        public string id {get; set;}
-        public string name { get; set;}
+        public string id { get; set; }
+        public string name { get; set; }
         public string type { get; set; }
         public string level { get; set; }
         public string description { get; set; }
         public int quantity { get; set; }
-        public string quantityText { get { return("x" + quantity.ToString() + ", "); } }
+        public string quantityText { get { return ("x" + quantity.ToString() + ", "); } }
+        public bool isInDeck
+        {
+            get {
+                if (quantity > 0)
+                {
+                    return (true);
+                }
+                else
+                {
+                    return (false);
+                }
+            } }
+
         public Card(string content)
         {
             string[] splitedContent = content.Split(',');
             string[] firstPart = splitedContent[0].Split(' ');
             this.id = firstPart[0];
             string fullName = "";
-            for(int i=2; i< firstPart.Length;i++)
+            for (int i = 2; i < firstPart.Length; i++)
             {
                 fullName += firstPart[i] + " ";
             }
             this.name = fullName;
             string[] secondPart = splitedContent[1].Split(' ');
-            if(secondPart[1].Contains('"'))
+            if (secondPart[1].Contains('"'))
             {
                 this.type = secondPart[1];
             }
-            else if(secondPart[2].Contains('"'))
+            else if (secondPart[2].Contains('"'))
             {
                 this.type = secondPart[2];
             }
 
-            this.type= this.type.Remove(0, this.type.IndexOf('"')).Trim();
-            if(secondPart.Length >4)
+            this.type = this.type.Remove(0, this.type.IndexOf('"')).Trim();
+            if (secondPart.Length > 4)
             {
                 this.level = secondPart[4];
             }
@@ -46,7 +59,7 @@ namespace CP_DeckManager
             }
 
             string desc = "";
-            for(int i=2; i< splitedContent.Length;i++)
+            for (int i = 2; i < splitedContent.Length; i++)
             {
                 desc += splitedContent[i] + ",";
 
@@ -62,18 +75,28 @@ namespace CP_DeckManager
 
         }
 
-        public string printToNvda()
+        public string printToNvda { get
         {
-            string final = name + ", " + type + " " + level + ", " + description;
+                string final = "";
+                if(isInDeck)
+                {
+                    final +="x"+quantity.ToString()+": ";
+                }
+             final += name + ", " + type + " " + level + ", " + description;
             return (final);
 
 
         }
+    }
 
-        public string printToDeck ()
+
+        public string printToDeck
         {
-            return(this.id + " " + this.quantity.ToString());
+            get
+            {
+                return (this.id + " " + this.quantity.ToString());
 
+            }
         }
     }
 }
