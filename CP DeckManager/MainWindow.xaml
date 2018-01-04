@@ -5,7 +5,7 @@
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             xmlns:local="clr-namespace:CP_DeckManager"
             mc:Ignorable="d"
-            Title="CP Deck Manager: V17.11" Height="350" Width="525">
+            Title="CP Deck Manager 18.1" Height="350" Width="525">
 
         <Window.Resources>
         <Style TargetType="ListBoxItem">
@@ -46,9 +46,10 @@
         <Grid Margin="-1,-2,1,2                                                                                             ">
             <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="1,1,0,0">                       
                 <TextBox Name="searchTextBox" TextChanged="searchTextBox_TextChanged" AutomationProperties.Name="Buscar carta: " AutomationProperties.HelpText="Escriba nombre o tag de carta a filtrar. puede buscar varios términos separándolos con un &amp;." TextWrapping="Wrap" Margin="-1,0,1,0" />
+            <Button Name="clearButton" Content="Limpiar filtros" Click="clearButton_Click" />
 
-        
-                    <ListBox Height="100" x:Name="cardList" ItemsSource="{Binding}" AutomationProperties.Name="Lista de cartas: " />
+
+            <ListBox Height="100" x:Name="cardList" ItemsSource="{Binding}" AutomationProperties.Name="Lista de cartas: " />
                     <ListBox Height="100" x:Name="deckCards" ItemsSource="{Binding}" AutomationProperties.Name="Mazo: " />
 
 

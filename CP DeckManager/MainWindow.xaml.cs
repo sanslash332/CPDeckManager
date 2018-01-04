@@ -28,6 +28,7 @@ namespace CP_DeckManager
         private List<string> types;
         private Deck currentDeck;
         private List<Card> filteredCards;
+        private List<Card> searchedCards;
         private bool NVDA = true;
         private Banlist banlist;
         private string secretWord;
@@ -93,10 +94,10 @@ namespace CP_DeckManager
             deckCards.KeyDown += cardList_KeyDown;
             deckCards.GotKeyboardFocus += DeckCards_GotKeyboardFocus;
             cardList.GotKeyboardFocus+= DeckCards_GotKeyboardFocus;
+            filteredCards = allCards;
             
             
-            
-            cardList.ItemContainerGenerator.StatusChanged+= ItemContainerGenerator_StatusChanged;
+            //cardList.ItemContainerGenerator.StatusChanged+= ItemContainerGenerator_StatusChanged;
 
 
         }
@@ -199,6 +200,8 @@ if(NVDA)
             if(filterType=="todos")
             {
                 cardList.ItemsSource = allCards;
+                filteredCards= allCards;
+
                 cardList.Items.Refresh();
             }
             else
@@ -209,11 +212,12 @@ if(NVDA)
 
 
             }
-
-
-
             
+            if(searchTextBox.Text.Length>0)
+            {
+                searchCards(searchTextBox.Text);
 
+            }
         }
 
         private void filterCards(string type)
@@ -524,9 +528,60 @@ if(NVDA)
             }
         }
 
+        private void searchCards(string text)
+        {
+            searchedCards = new List<Card>();
+            string[] keywords = text.Split('&');
+            foreach(Card c in filteredCards)
+            {
+                bool added = false;
+                foreach(string s in keywords)
+                {
+                    if(c.name.ToLower().Contains(s.ToLower()) || c.description.ToLower().Contains(s.ToLower()))
+                    {
+                        added = true;
+                        break;
+
+                    }
+                }
+
+                if(added)
+                {
+                    searchedCards.Add(c);
+                }
+
+            }
+            cardList.ItemsSource = searchedCards;
+            cardList.Items.Refresh();
+            ScreenReaderControl.speech("Se han encontrado "+searchedCards.Count() + " cartas.", true);
+        }
+
         private void searchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            if(searchTextBox.Text.Length>0)
+            {
+                searchCards(searchTextBox.Text);
 
+            }
+            else
+            {
+                cardList.ItemsSource = filteredCards;
+                cardList.Items.Refresh();
+
+            }
+        }
+
+        
+        private void clearButton_Click(object sender, RoutedEventArgs e)
+        {
+            searchTextBox.Text = "";
+            cardList.ItemsSource = allCards;
+            filteredCards = allCards;
+            cardList.Items.Refresh();
+            cardList.SelectedIndex = 0;
+
+
+            
         }
     }
 }
