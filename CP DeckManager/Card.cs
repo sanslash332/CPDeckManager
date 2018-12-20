@@ -39,25 +39,19 @@ namespace CP_DeckManager
             }
             this.name = fullName;
             string[] secondPart = splitedContent[1].Split(' ');
-            if (secondPart[1].Contains('"'))
+            this.type = splitedContent[1].Split('"')[1].Trim();
+            this.level = "0";
+            foreach (var i in secondPart)
             {
-                this.type = secondPart[1];
-            }
-            else if (secondPart[2].Contains('"'))
-            {
-                this.type = secondPart[2];
-            }
+                bool isint = int.TryParse(i, out int num);
+                if(isint)
+                {
+                    this.level = num.ToString();
 
-            this.type = this.type.Remove(0, this.type.IndexOf('"')).Trim();
-            if (secondPart.Length > 4)
-            {
-                this.level = secondPart[4];
-            }
-            else
-            {
-                this.level = "0";
-            }
+                }
 
+            }
+            
             string desc = "";
             for (int i = 2; i < splitedContent.Length; i++)
             {

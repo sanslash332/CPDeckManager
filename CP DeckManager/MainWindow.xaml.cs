@@ -59,7 +59,7 @@ namespace CP_DeckManager
             }
             catch(Exception e)
             {
-                ScreenReaderControl.speech("error terribleeee no hay banlist!:" + e.ToString(), true);
+                //ScreenReaderControl.speech("error terribleeee no hay banlist!:" + e.ToString(), true);
 
             }
             
