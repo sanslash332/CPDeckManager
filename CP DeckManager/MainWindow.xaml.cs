@@ -262,12 +262,6 @@ if(NVDA)
 
             if(e.Key== Key.Z || e.Key== Key.Space || e.Key== Key.Return)
             {
-                if(currentDeck.totalCards>=80)
-                {
-                    ScreenReaderControl.speech("no se pueden añadir más de 80 cartas", true);
-                    return;
-
-                }
                 Card c = (Card)lb.SelectedItem;
                 if(c==null)
                 {
@@ -278,7 +272,7 @@ if(NVDA)
                 if(Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift))
                 {
                     int contador = 0;
-                    while(currentDeck.totalCards<80 && contador < 4)
+                    while( contador < 4)
                     {
                         currentDeck.addCard(c);
                         contador++;
@@ -325,9 +319,104 @@ if(NVDA)
 
 
             }
+            else if (e.Key == Key.D0 || e.Key == Key.NumPad0)
+            {
+
+                Card c = (Card)lb.SelectedItem;
+                if (c == null)
+                {
+                    return;
+
+                }
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                ScreenReaderControl.speech(string.Format("removidas todas las copias de {0}", c.name), true);
+
+                refreshAndKeepSelection(lb, index);
+            }
+            else if (e.Key == Key.D1 || e.Key == Key.NumPad1)
+            {
+
+                Card c = (Card)lb.SelectedItem;
+                if (c == null)
+                {
+                    return;
+
+                }
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.addCard(c);
+                ScreenReaderControl.speech(string.Format("añadida una copia de {0}", c.name), true);
+
+                refreshAndKeepSelection(lb, index);
+            }
+            else if (e.Key == Key.D2 || e.Key == Key.NumPad2)
+            {
+
+                Card c = (Card)lb.SelectedItem;
+                if (c == null)
+                {
+                    return;
+
+                }
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.addCard(c);
+                currentDeck.addCard(c);
+                ScreenReaderControl.speech(string.Format("añadidas dos copias de {0}", c.name), true);
+
+                refreshAndKeepSelection(lb, index);
+            }
+            else if (e.Key == Key.D3 || e.Key == Key.NumPad3)
+            {
+
+                Card c = (Card)lb.SelectedItem;
+                if (c == null)
+                {
+                    return;
+
+                }
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.addCard(c);
+                currentDeck.addCard(c);
+                currentDeck.addCard(c);
+                ScreenReaderControl.speech(string.Format("añadidas tres copias de {0}", c.name), true);
+
+                refreshAndKeepSelection(lb, index);
+            }
+            else if (e.Key == Key.D4 || e.Key == Key.NumPad4)
+            {
+
+                Card c = (Card)lb.SelectedItem;
+                if (c == null)
+                {
+                    return;
+
+                }
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.removeCard(c);
+                currentDeck.addCard(c);
+                currentDeck.addCard(c);
+                currentDeck.addCard(c);
+                currentDeck.addCard(c);
+                ScreenReaderControl.speech(string.Format("añadidas cuatro copias de {0}", c.name), true);
+
+                refreshAndKeepSelection(lb, index);
+            }
 
 
-            
+        
         }
 
         void MainWindow_KeyDown(object sender, KeyEventArgs e)
